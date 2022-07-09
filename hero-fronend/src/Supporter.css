@@ -1,0 +1,109 @@
+.Supporter {
+    background: #F5F5F5;
+}
+
+.blueLogo {
+    width: 153.75px;
+    height: 35.49px;
+}
+
+.Card {
+    width: 295px;
+    height: 97px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    
+}
+
+.Card p {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    /* or 129% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #0000FF;
+    padding: 19px 18px 14px 19px;
+}
+
+.Card-w-bg {
+    width: 294.48px;
+    height: 116.33px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    margin-top: 17.9px;
+    margin-bottom: 17.9px;
+}
+.Card-w-bg:nth-child(1) {
+    background:  url(./Assets/MobilizersPhotos/Elijah\ Mckenzie.jpg) rgba(0, 0, 0, 0.31);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.Card-w-bg:nth-child(2) {
+    background:  url(./Assets/MobilizersPhotos/Julieta\ Martinez.jpg) rgba(0, 0, 0, 0.31);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.Card-w-bg:nth-child(3) {
+    background:  url(./Assets/MobilizersPhotos/Jessica\ Klezcka.jpg) rgba(0, 0, 0, 0.31);
+    background-size: cover;
+    background-position: 0rem -5rem;
+    background-repeat: no-repeat;
+}
+.Card-w-bg:nth-child(4) {
+    background:  url(./Assets/MobilizersPhotos/Juan\ Sierra.jpg) rgba(0, 0, 0, 0.31);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ds-h {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    margin-top: 7px;
+    color: #0000FF;
+    background-color: transparent;
+    border: none;
+}
+
+.co-p {
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+
+/* or 157% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #0000FF;
+margin-top: 10px;
+}
+
+.dot {
+    width: 8.64px;
+height: 10.33px;
+}
+
+ul {
+    padding-left: 0;
+}
+

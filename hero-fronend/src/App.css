@@ -1,0 +1,64 @@
+.App 
+{
+  background: linear-gradient(180deg, #0000FF 0%, #FFFFFF 131.8%);
+  color: white;
+}
+
+.logo {
+  width: 153.75px;height: 35.49px;
+}
+
+.women {
+  width: 223px;
+  height: 223px;
+}
+
+.headline {
+  width: 305px;
+height: 85px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+
+
+.headline-desc {
+  width: 276px;
+height: 87px;
+  font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+
+/* or 143% */
+display: flex;
+align-items: center;
+text-align: center;
+color: white;
+}
+
+
+.btn-hero {
+  background-color: white;
+  color: #8585FF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  width: 268px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 30px;
+  border: none;
+}
+
+ul {
+  list-style: none;
+
+}
