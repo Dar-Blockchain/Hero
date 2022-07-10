@@ -9,6 +9,7 @@ import dot from '../../Assets/HERO Brand Assets/bluedot.png'
 import play from '../../Assets/HERO Brand Assets/Play.svg'
 import personn from '../../Assets/HERO Brand Assets/Group 2.svg'
 import leaf from '../../Assets/HERO Brand Assets/Group 1.svg'
+import { Link } from 'react-router-dom';
 const Profile = () => {
   const { id } = useParams();
   const [profile, setProfile] = useState();
@@ -122,7 +123,7 @@ const Profile = () => {
         <div className="ladesc d-flex flex-column align-items-center justify-content-center">
           <b>Launch is one month away!</b>
           <p>Take action on climate change by pledging to fund your favourite mobilizer upon launch.</p>
-          <button>Make a pledge</button>
+          <Link to="/forum"><button >Make a pledge</button></Link>
         </div>
         <div className="d-flex flex-column cause justify-content-center align-items-center">
           <h5 className="mx-auto">Works on same causes as</h5>
