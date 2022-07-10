@@ -165,7 +165,6 @@ const Profile = () => {
               <p className="cmp-p col-9 mx-auto">
                 Recognized as one of the world's leading social entrepreneurs raising awareness on climate change and gender equality.
               </p>
-
             </div>
           </div>
 
