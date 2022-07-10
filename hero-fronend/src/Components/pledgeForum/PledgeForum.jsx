@@ -118,7 +118,7 @@ const PledgeForum = () => {
         {forum === 3 &&
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
-        <form claforumssName="d-flex flex-column align-self-center align-items-center justify-content-center">        
+        <form className="d-flex flex-column align-self-center align-items-center justify-content-center">        
         <label>
           <h6>Your Name</h6>
           <input type="text" name='Full_Name' onChange={handleChange} placeholder="Full Name" />
