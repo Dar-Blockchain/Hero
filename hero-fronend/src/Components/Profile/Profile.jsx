@@ -7,10 +7,13 @@ import mobilizers from '../../Assets/HERO Brand Assets/Logo_bluepng.png'
 import "./Profile.css"
 import dot from '../../Assets/HERO Brand Assets/bluedot.png'
 import play from '../../Assets/HERO Brand Assets/Play.svg'
+import personn from '../../Assets/HERO Brand Assets/Group 2.svg'
+import leaf from '../../Assets/HERO Brand Assets/Group 1.svg'
 const Profile = () => {
   const { id } = useParams();
   const [profile, setProfile] = useState();
   const [profileImage, setProfileImage] = useState();
+
   useEffect(() => {
     if (!profile){
       MobilizerData.map((value, index) => {
@@ -21,8 +24,71 @@ const Profile = () => {
       })
     }
   })
+
+  function campHandler(e){
+    e.preventDefault(); 
+  }
+
+
   return (
-    <div className="container d-flex flex-column align-items-center Profile">
+
+    <div className="container-fluid ">
+      
+      <div className="container TopCampaigns d-flex flex-column">
+        <h5 className="ccmp">Current Campaigns</h5>
+        {/* {profile ? (
+            profile.TopCampaigns.map((value, index) =>{
+              <p>
+                
+              </p>
+            })
+        ):("")} */}
+
+        <div className='d-flex flex-column justify-content-center'>
+          <span className="d-flex">
+          <img   src={personn}/>
+          <b className="cmp-title">Adolescent Empowerment</b>
+          </span>
+          <small className="cmp-subtitle">Tremendas Foundation</small>
+          <p className="cmp-t">In progress</p>
+          <p className="cmp-p">
+          Promoting the empowerment of adolescents and young people by inviting them to put their skills and talents at the service of the community to generate social impact.
+          </p>
+
+        </div>
+        <div>
+          <span className="d-flex">
+          <img   src={personn}/>
+          <b className="cmp-title">Adolescent Empowerment</b>
+          </span>
+          <small className="cmp-subtitle">Tremendas Foundation</small>
+          <p className="cmp-t">In progress</p>
+          <p className="cmp-p">
+          Promoting the empowerment of adolescents and young people by inviting them to put their skills and talents at the service of the community to generate social impact.
+          </p>
+
+        </div>
+        <div>
+          <span className="d-flex">
+          <img   src={leaf}/>
+          <b className="cmp-title">Adolescent Empowerment</b>
+          </span>
+          <small className="cmp-subtitle">Tremendas Foundation</small>
+          <p className="cmp-t">In progress</p>
+          <p className="cmp-p">
+          Promoting the empowerment of adolescents and young people by inviting them to put their skills and talents at the service of the community to generate social impact.
+          </p>
+
+        </div>
+
+
+
+      </div>
+
+
+      <div className="container d-flex flex-column align-items-center Profile">
+
+      
       <img src={mobilizers} id="logo"/>
       {profile ? (
         <div>
@@ -63,10 +129,10 @@ const Profile = () => {
 
 
 
-      ):(<h1>Hollaaaaa</h1>)}
+      ):("")}
 
 
-
+    </div>
 
     </div>
   )

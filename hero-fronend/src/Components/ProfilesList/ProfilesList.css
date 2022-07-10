@@ -30,6 +30,7 @@ ul {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-position: 10%;
 }
 #JulietaItem {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Julieta\ Martinez.jpg);
@@ -41,10 +42,13 @@ ul {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Jessica\ Klezcka.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 10% 30%;
 }
 
 #JuanItem {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Juan\ Sierra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 10%;
+
 }

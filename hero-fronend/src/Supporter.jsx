@@ -7,8 +7,6 @@ import ProfilesList from './Components/ProfilesList/ProfilesList'
 
 const Supporter = () => {
 
-
-
   function handleDropdown(e) {
     e.preventDefault(); 
     document.querySelector('.heroo').style.zIndex = "-1"
