@@ -25,6 +25,7 @@ const Profile = () => {
     <div className="container d-flex flex-column align-items-center Profile">
       <img src={mobilizers} id="logo"/>
       {profile ? (
+        <div>
       <div className="hero-card d-flex">
           <span id={"Profile" + profile.id}></span>
           <div className='d-flex flex-column'>
@@ -33,7 +34,31 @@ const Profile = () => {
           <p className='profileDescription'>{profile.profileDescription}</p>
           <p className="smedia">{profile.instagram}</p>
           </div>
+          </div>
+          {profile.id === "Julieta" ? (
+          <div className="d-flex align-items-center justify-content-center" id={"Play"+ profile.id}>
+            <img className="align-self-center" src={play} />
+          </div>
+        ):("")}
 
+        <div className="tb row">
+            <button className="col-6 cmp">Campaigns</button>
+            <button className="col-6 vic">Victories</button>
+        </div>
+        <div className="ladesc d-flex flex-column align-items-center justify-content-center">
+          <b>Launch is one month away!</b>
+          <p>Take action on climate change by pledging to fund your favourite mobilizer upon launch.</p>
+          <button>Make a pledge</button>
+        </div>
+        <div className="d-flex flex-column cause justify-content-center align-items-center">
+          <h5 className="mx-auto">Works on same causes as</h5>
+            <div className="row">
+              <button className='col-5 mx-auto causebtn'>Juan Sierra</button>
+              <button className='col-5 mx-auto causebtn'>Jessica Klezcka</button>
+              <button className='col-6 mx-auto causebtn last'>Elijah Mckenzie</button>
+            </div>
+
+        </div>
       </div>
 
 
