@@ -1,8 +1,7 @@
 .Supporter {
     background: #F5F5F5;
     height: 100vh;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
 }
 
 
@@ -17,6 +16,11 @@
     background: #FFFFFF;
     border-radius: 20px;
     
+}
+
+.container-fluid{
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .Card p {
@@ -77,11 +81,8 @@ height: 10.33px;
 .hero-dropdown {
     /* display: none; */
     /* display: none; */
-    height: 90vh;
-    position: absolute;
-    z-index: -1;
+
     background: rgba(0, 0, 255, 0.9);
-    border-radius: 50px;
     -webkit-transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     -o-transition: all 0.5s 0s ease;
