@@ -29,6 +29,7 @@ const PledgeForum = () => {
           ...inputState,
           [e.target.name]: [...inputState.climatesChanges, e.target.innerText],
         })
+        e.currentTarget.classList.toggle('w');
       }
 
       if (e.target.name === "ExitesYouHero") {
@@ -36,6 +37,7 @@ const PledgeForum = () => {
           ...inputState,
           [e.target.name]: [...inputState.ExitesYouHero, e.target.innerText],
         })
+        e.currentTarget.classList.toggle('w');
       }
     }
 
@@ -87,7 +89,7 @@ const PledgeForum = () => {
       Which aspects of climate change concern you the most?        
       </p>
       <button name='climatesChanges' onClick={handleClick} className="btn-c-m">Drought (water scarcity)</button>
-      <button name='climatesChanges' onClick={handleClick} className="btn-c-m w my-4">Severe weather/natural disasters</button>
+      <button name='climatesChanges' onClick={handleClick} className="btn-c-m my-4">Severe weather/natural disasters</button>
       <button name='climatesChanges' onClick={handleClick} className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
 
       <button onClick={() => setForum(2)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
@@ -100,8 +102,8 @@ const PledgeForum = () => {
         <p className="p-headline">
         What excites you more about HERO?</p>
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m">The ability to contribute directly to a climate mobilizer</button>
-        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m w mt-4">Having a vote on the governance and future of HERO</button>
-        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m w my-4">Getting direct feedback on the actions of the mobilizer</button>
+        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m mt-4">Having a vote on the governance and future of HERO</button>
+        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m my-4">Getting direct feedback on the actions of the mobilizer</button>
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
 
         <button onClick={() => setForum(3)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
