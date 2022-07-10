@@ -1,6 +1,6 @@
 .pledgeForum {
     background: linear-gradient(180deg, #0000FF 0%, #FFFFFF 131.8%);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
@@ -54,4 +54,74 @@ text-align: center;
 color: #FFFFFF;
 
 
+}
+
+.btn-c-m {
+    border: 2px solid #FFFFFF;
+    border-radius: 30px;
+    width: 295px;
+    height: 52px;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.96);
+}
+
+.btn-c-m.l {
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+display: flex;
+align-items: center;
+text-align: center;
+color: rgba(255, 255, 255, 0.96);
+padding-top: 8px;
+padding-bottom: 7px;
+
+}
+
+.btn-c-m.w {
+    background-color:white;
+    color: rgba(133, 133, 255, 0.96);
+}
+
+form input {
+    outline: none;
+    -webkit-appearance: none;
+    border: none; /* Removes the default border */
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+
+label h6 {
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+margin-top: 13px;
+
+}
+
+.wtc {
+    font-style: italic;
+font-weight: 500;
+font-size: 18px;
+line-height: 20px;
+
+/* or 111% */
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
 }
