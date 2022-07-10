@@ -22,8 +22,21 @@ ul {
 
 }
 
+a:hover {
+    color: white;
+}
+
 .card-headline {
     margin-right: 5px;
+    font-style: italic;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
 }
 #ElijahItem{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/ElijahMckenzie.jpg);

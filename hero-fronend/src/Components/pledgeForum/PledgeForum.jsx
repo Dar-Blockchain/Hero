@@ -2,31 +2,46 @@ import React from 'react'
 import logo from "../../Assets/HERO Brand Assets/logo.png"
 import "./pledgeForum.css"
 import play from "../../Assets/HERO Brand Assets/Group 308.svg"
+import { useState } from 'react'
+import { useEffect } from 'react'
 const PledgeForum = () => {
+  const [forum, setForum] = useState('');
+
+
+
   return (
     <div className='pledgeForum container d-flex flex-column px-4 py-5 justify-content-center'>
       <button className="closebtn align-self-end">X</button>
-      <div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
+      
+      {forum === "" &&  
+      (<div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
         What monthly subscription amount are you willing to pledge to this mobilizer?
         </p>
         <input className="inputcash" type={"text"} placeholder="€ 20"/>
-        <button className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
+        <button onClick={() => setForum("state2")} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
         <p className="p-end">We will let you know as soon as HERO is officially launched. You will then be part of the first HERO Supporters  in the world.</p>
 
       </div>
-      <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
-        <img id='logo' src={logo} srcSet={logo} alt="logo" />
-        <p className="p-headline">
-        Which aspects of climate change concern you the most?        
-        </p>
-        <button className="btn-c-m">Drought (water scarcity)</button>
-        <button className="btn-c-m w my-4">Severe weather/natural disasters</button>
-        <button className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
+      )} 
 
-        <button className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
-      </div>
+
+    {forum === "state2" && 
+      <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
+      <img id='logo' src={logo} srcSet={logo} alt="logo" />
+      <p className="p-headline">
+      Which aspects of climate change concern you the most?        
+      </p>
+      <button className="btn-c-m">Drought (water scarcity)</button>
+      <button className="btn-c-m w my-4">Severe weather/natural disasters</button>
+      <button className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
+
+      <button onClick={() => setForum('state3')} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
+    </div>
+    }
+
+    {forum === "state3" &&
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
@@ -36,14 +51,16 @@ const PledgeForum = () => {
         <button className="btn-c-m w my-4">Getting direct feedback on the actions of the mobilizer</button>
         <button className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
 
-        <button className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
+        <button onClick={() => setForum('state4')} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
       </div>
 
-
+        }
 
 
 
 {/* Contact */}
+
+        {forum === "state4" &&
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <form className="d-flex flex-column align-self-center align-items-center justify-content-center">        
@@ -63,18 +80,18 @@ const PledgeForum = () => {
         <h6>City</h6>
           <input type="text" placeholder="Your City" />
         </label>
-        <button  className="btn-c-m w my-4">Become a HERO Supporter</button>
+        <button onClick={() => setForum('state5')}  className="btn-c-m w my-4">Become a HERO Supporter</button>
       </form>
       </div>
+      }
 
-
-
-
+      
+      {forum === 'state5' && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <h6 className="wtc">Welcome to the future of climate action!</h6>
       </div>
-
+    }
 
 
 
