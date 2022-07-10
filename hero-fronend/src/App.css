@@ -2,6 +2,7 @@
 {
   background: linear-gradient(180deg, #0000FF 0%, #FFFFFF 131.8%);
   color: white;
+  min-height: 100vh;
 }
 
 .logo {

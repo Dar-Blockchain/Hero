@@ -63,7 +63,7 @@ const PledgeForum = () => {
         <h6>City</h6>
           <input type="text" placeholder="Your City" />
         </label>
-        <button className="btn-c-m w my-4">Become a HERO Supporter</button>
+        <button  className="btn-c-m w my-4">Become a HERO Supporter</button>
       </form>
       </div>
 

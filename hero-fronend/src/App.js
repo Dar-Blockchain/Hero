@@ -4,7 +4,8 @@ import logo from './Assets/HERO Brand Assets/logo.png'
 import { Link } from "react-router-dom";
 function App() {
   return (
-    <div className="App d-flex flex-column align-items-center">
+    <div className="App container">
+      <div className="d-flex flex-column align-items-center pt-5">
       <img alt='logo' src={logo} className="logo" />
       <img alt='women' className='women' src={maskGroup} srcSet={maskGroup} />
       <h1 className='headline'>
@@ -23,7 +24,7 @@ function App() {
       </ul>
 
       <Link to='/supporter'> <button className='btn-hero'>Become a HERO Supporter</button></Link>
-    
+      </div>
     </div>
 
   );
