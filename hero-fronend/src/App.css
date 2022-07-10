@@ -30,9 +30,9 @@ height: 85px;
 
 
 .headline-desc {
-  width: 276px;
+  width: 305px;
 height: 87px;
-  font-style: normal;
+font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 20px;
@@ -41,7 +41,15 @@ line-height: 20px;
 display: flex;
 align-items: center;
 text-align: center;
-color: white;
+
+color: #FFFFFF;
+
+}
+
+
+.herodot {
+  height: 10.33px;
+  width: 8.64px;
 }
 
 
