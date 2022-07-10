@@ -47,17 +47,18 @@ const PledgeForum = () => {
     
     }
 
-    useEffect(() => {
-      axios.post(`https://hegemony.donftify.digital:8080/InserData`,
-      
-      )
-          .then(res => {
-              console.log(res.data)
-          })
-          .catch(err => {
-              console.log(err)
-          })
-  }, [])
+      const handleRequest = (e) => {
+        axios.post(`https://hegemony.donftify.digital:8080/InserData`,
+        inputState
+        ).then(res => {
+          console.log(res.data)
+          setForum(4)
+        }).catch(err => {
+          console.log(err)
+          setForum(2)}) 
+      }
+
+
 
 
 
@@ -132,8 +133,9 @@ const PledgeForum = () => {
         <h6>City</h6>
           <input type="text" name='City' onChange={handleChange} placeholder="Your City" />
         </label>
-        <button onClick={() => setForum(4)}  className="btn-c-m w my-4">Become a HERO Supporter</button>
       </form>
+      <button onClick={handleRequest}  className="btn-c-m w my-4">Become a HERO Supporter</button>
+
       </div>
       }
 
