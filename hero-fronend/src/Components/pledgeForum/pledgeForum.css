@@ -96,7 +96,9 @@ form input {
     border: none; /* Removes the default border */
     border-bottom: 1px solid white;
     background-color: transparent;
+    color: rgba(255, 255, 255, 0.41);
 }
+
 
 label h6 {
     font-style: normal;
