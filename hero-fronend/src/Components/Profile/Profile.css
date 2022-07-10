@@ -3,6 +3,7 @@
     min-height: 100vh;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    z-index: 1;
 }
 #logo {
     width: 153.75px;
@@ -219,7 +220,14 @@ border-radius: 30px;
 }
 
 .TopCampaigns {
+    position: relative;
+    z-index: -2;
+    display: none;
     background-color:rgba(0, 0, 255, 0.96);
+    -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease;
 }
 
 
@@ -286,4 +294,17 @@ display: flex;
 align-items: center;
 
 color: #FFFFFF;
+margin-bottom: 37px;
+}
+
+
+
+.closebtn {
+    color: #FFFFFF;
+    border: none;
+    background: transparent;
+    font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 37px;
 }

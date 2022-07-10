@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Supporter from './Supporter';
 import Profile from './Components/Profile/Profile';
+import PledgeForum from './Components/pledgeForum/PledgeForum';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path='/supporter' element={< Supporter/>} />
         <Route path='/Profile:id' element={<Profile />}/>
+        <Route path="/forum" element={<PledgeForum />} />
       </Routes>
     </BrowserRouter>
 );

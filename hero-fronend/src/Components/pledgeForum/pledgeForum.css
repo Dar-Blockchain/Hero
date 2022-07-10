@@ -1,0 +1,35 @@
+.pledgeForum {
+    background: linear-gradient(180deg, #0000FF 0%, #FFFFFF 131.8%);
+    height: 100vh;
+}
+
+
+.inputcash {
+    outline: none;
+    -webkit-appearance: none;
+    border: none; /* Removes the default border */
+    border-bottom: 1px solid white;
+    color: white;
+    background: transparent;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    width: 50%;
+    margin-top: 26px;
+    margin-bottom: 31px;
+
+}
+
+.inputcash:focus{
+    outline: none 
+
+}
+
+.p-headline {
+    
+}
