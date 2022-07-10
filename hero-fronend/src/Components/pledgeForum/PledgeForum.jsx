@@ -4,8 +4,41 @@ import "./pledgeForum.css"
 import play from "../../Assets/HERO Brand Assets/Group 308.svg"
 import { useState } from 'react'
 import { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import axios from 'axios'
+
 const PledgeForum = () => {
   const [forum, setForum] = useState(0);
+  const locations = useLocation();
+
+  const [inputState, setInput] = useState({
+        Full_Name: "",
+        Email: "",
+        Birth_date: "",
+        City: "",
+        ExitesYouHero: "",
+        climatesChanges: "",
+        MonthlySubs: ""
+    })
+
+
+
+    const handleChange = (e) => {
+      setInput({
+        ...inputState,
+        [e.target.name]: e.target.value
+    })
+    }
+
+  //   useEffect(() => {
+  //     axios.get(` https://hegemony.donftify.digital:8080/InserData`)
+  //         .then(res => {
+  //             console.log(res.data)
+  //         })
+  //         .catch(err => {
+  //             console.log(err)
+  //         })
+  // }, [])
 
 
 
@@ -19,7 +52,7 @@ const PledgeForum = () => {
         <p className="p-headline">
         What monthly subscription amount are you willing to pledge to this mobilizer?
         </p>
-        <input className="inputcash" type={"text"} placeholder="€ 20"/>
+        <input name='MonthlySubs' onChange={handleChange} className="inputcash" type="number" placeholder="€ 20"/>
         <button onClick={() => setForum(1)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
         <p className="p-end">We will let you know as soon as HERO is officially launched. You will then be part of the first HERO Supporters  in the world.</p>
 
@@ -66,19 +99,19 @@ const PledgeForum = () => {
         <form claforumssName="d-flex flex-column align-self-center align-items-center justify-content-center">        
         <label>
           <h6>Your Name</h6>
-          <input type="text" placeholder="Full Name" />
+          <input type="text" name='Full_Name' onChange={handleChange} placeholder="Full Name" />
         </label>
         <label>
         <h6>Email</h6>
-          <input type="text" placeholder="Your email adresss" />
+          <input type="text" name='Email' onChange={handleChange} placeholder="Your email adresss" />
         </label>
         <label>
         <h6>Birth Date</h6>
-          <input type="text" placeholder="Your Birth Date" />
+          <input type="text" name='Birth_date' onChange={handleChange} placeholder="Your Birth Date" />
         </label>
         <label>
         <h6>City</h6>
-          <input type="text" placeholder="Your City" />
+          <input type="text" name='City' onChange={handleChange} placeholder="Your City" />
         </label>
         <button onClick={() => setForum(4)}  className="btn-c-m w my-4">Become a HERO Supporter</button>
       </form>

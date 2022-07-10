@@ -5,6 +5,11 @@
 }
 
 
+.mobilizersLogowhite {
+    width: 189px;
+    height: 97px;
+}
+
 .blueLogo {
     width: 153.75px;
     height: 35.49px;
@@ -18,7 +23,7 @@
     
 }
 
-.container-fluid{
+.container-fluid {
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -79,14 +84,11 @@ height: 10.33px;
 
 
 .hero-dropdown {
-    /* display: none; */
-    /* display: none; */
-
     background: rgba(0, 0, 255, 0.9);
-    -webkit-transition: all 0.5s 0s ease;
+    /* -webkit-transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     -o-transition: all 0.5s 0s ease;
-    transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease; */
 }
 
 .close {
@@ -100,6 +102,13 @@ height: 10.33px;
 }
 
 
+.hero-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style:disc;
+}
+
 .descc {
 font-style: normal;
 font-weight: 700;
@@ -110,6 +119,8 @@ display: flex;
 align-items: center;
 text-align: justify;
 color: #FFFFFF;
+max-width: 263px;
+margin-top: 50px;
 }
 
 

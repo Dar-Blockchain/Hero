@@ -205,7 +205,7 @@ const Profile = () => {
               <div className="ladesc d-flex flex-column align-items-center justify-content-center">
                 <b>Launch is one month away!</b>
                 <p>Take action on climate change by pledging to fund your favourite mobilizer upon launch.</p>
-                <Link to="/forum"><button >Make a pledge</button></Link>
+                <Link to={"/forum"} state={ {from: profile.name} }><button >Make a pledge</button></Link>
               </div>
               <div className="d-flex flex-column cause justify-content-center align-items-center">
                 <h5 className="mx-auto">Works on same causes as</h5>

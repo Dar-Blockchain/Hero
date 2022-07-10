@@ -27,7 +27,7 @@ const Supporter = () => {
    
     <div className='Supporter d-flex flex-column align-items-center'>
       {Dropdown === "on" && 
-            <div className='hero-dropdown container-fluid'>
+            <div className='hero-dropdown container-fluid d-flex flex-column justify-content-center align-items-center'>
             <div className='row flex-column'>
             <button onClick={closeDropdown} className='close align-self-end'>X</button>
             <img  src={mobilizersLogowhite} srcSet={mobilizersLogowhite} className="mobilizersLogowhite" />
@@ -58,10 +58,8 @@ const Supporter = () => {
             <button className='ds-h' onClick={handleDropdown}>Discover how HERO Mobilizers are verified</button>
             <p className='co-p'>Click on the mobilizers to see their profiles.</p>
             <ProfilesList/>
-      
             </div>
       }
-
     </div>
     </div>
   )
