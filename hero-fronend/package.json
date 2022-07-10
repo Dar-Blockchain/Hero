@@ -38,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "image-webpack-loader": "^8.1.0",
     "react-router-dom": "^6.3.0"
   }
 }

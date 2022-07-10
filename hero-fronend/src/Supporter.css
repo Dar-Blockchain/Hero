@@ -1,5 +1,8 @@
 .Supporter {
     background: #F5F5F5;
+    height: 100vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .blueLogo {
@@ -29,44 +32,7 @@
     padding: 19px 18px 14px 19px;
 }
 
-.Card-w-bg {
-    width: 294.48px;
-    height: 116.33px;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    border-radius: 20px;
-    margin-top: 17.9px;
-    margin-bottom: 17.9px;
-}
-.Card-w-bg:nth-child(1) {
-    background:  url(./Assets/MobilizersPhotos/Elijah\ Mckenzie.jpg) rgba(0, 0, 0, 0.31);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-}
-.Card-w-bg:nth-child(2) {
-    background:  url(./Assets/MobilizersPhotos/Julieta\ Martinez.jpg) rgba(0, 0, 0, 0.31);
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-}
-.Card-w-bg:nth-child(3) {
-    background:  url(./Assets/MobilizersPhotos/Jessica\ Klezcka.jpg) rgba(0, 0, 0, 0.31);
-    background-size: cover;
-    background-position: 0rem -5rem;
-    background-repeat: no-repeat;
-}
-.Card-w-bg:nth-child(4) {
-    background:  url(./Assets/MobilizersPhotos/Juan\ Sierra.jpg) rgba(0, 0, 0, 0.31);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+
 
 .ds-h {
     font-style: normal;
@@ -103,14 +69,14 @@ margin-top: 10px;
 height: 10.33px;
 }
 
-ul {
-    padding-left: 0;
-}
+
 
 
 
 .hero-dropdown {
     /* display: none; */
+    /* display: none; */
+    height: 90vh;
     position: absolute;
     z-index: -1;
     background: rgba(0, 0, 255, 0.9);
@@ -142,4 +108,15 @@ display: flex;
 align-items: center;
 text-align: justify;
 color: #FFFFFF;
+}
+
+
+.t-link {
+    text-decoration: none;
+    color: white;
+}
+
+.browse-p {
+    margin-top: 35.93px;
+    margin-bottom: 7px;
 }

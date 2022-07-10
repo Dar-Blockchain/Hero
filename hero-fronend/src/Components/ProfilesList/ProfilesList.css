@@ -1,0 +1,50 @@
+ul {
+    padding-left: 0;
+}
+
+
+.Card-w-bg {
+    width: 294.48px;
+    height: 116.33px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    margin-top: 17.9px;
+    margin-bottom: 17.9px;
+}
+.Card-w-bg{
+
+}
+
+.card-headline {
+    margin-right: 5px;
+}
+#ElijahItem{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/ElijahMckenzie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+#JulietaItem {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Julieta\ Martinez.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#JessicaItem {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Jessica\ Klezcka.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#JuanItem {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Juan\ Sierra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

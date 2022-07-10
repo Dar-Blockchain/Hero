@@ -1,8 +1,10 @@
 import React from 'react'
 import logo from './Assets/HERO Brand Assets/Logo_bluepng.png'
 import './Supporter.css'
-import dot from './Assets/HERO Brand Assets/g4622.png'
 import mobilizersLogowhite from './Assets/MobilizersPhotos/mobilizersLogowhite.svg'
+import ProfilesList from './Components/ProfilesList/ProfilesList'
+
+
 const Supporter = () => {
 
 
@@ -27,7 +29,7 @@ const Supporter = () => {
         </div>
         <div className='descc d-flex flex-column justify-content-center align-items-center'>
           
-         <bold>How we verify HERO Mobilizers :</bold>  
+         <b>How we verify HERO Mobilizers :</b>  
 
           <p>HERO identifies publicly recognised climate movement leaders and campaigners.</p>
             
@@ -44,37 +46,11 @@ const Supporter = () => {
       </div>
       <div className="heroo container d-flex flex-column justify-content-center align-items-center">
       <img src={logo} alt="Hero Logo Blue" srcSet={logo} className='blueLogo' />
-      <div className='Card d-flex justify-content-center align-items-center'><p>Browse the first HERO Mobilizers with a verified track record on climate action.</p></div>
+      <div className='Card d-flex justify-content-center align-items-center browse-p'><p>Browse the first HERO Mobilizers with a verified track record on climate action.</p></div>
       <button className='ds-h' onClick={handleDropdown}>Discover how HERO Mobilizers are verified</button>
       <p className='co-p'>Click on the mobilizers to see their profiles.</p>
-      
-      <ul className='d-flex flex-column align-self-center'>
-        <div className='Card-w-bg'>
-              <div className='mx-auto'>
-                  <span className='d-flex'><h3>Elijah Mckenzie</h3> <img src={dot} alt="hero" className='dot' /> </span>
-                  <h6 className=''>UK</h6>
-              </div>
-        </div>
-        <div className='Card-w-bg'>
-              <div className='mx-auto'>
-                  <span className='d-flex'><h3>Elijah Mckenzie</h3> <img src={dot} alt="hero" className='dot' /> </span>
-                  <h6 className=''>UK</h6>
-              </div>
-        </div>
+      <ProfilesList/>
 
-                <div className='Card-w-bg'>
-              <div className='mx-auto'>
-                  <span className='d-flex'><h3>Elijah Mckenzie</h3> <img src={dot} alt="hero" className='dot' /> </span>
-                  <h6 className=''>UK</h6>
-              </div>
-        </div>
-        <div className='Card-w-bg'>
-              <div className='mx-auto'>
-                  <span className='d-flex'><h3>Elijah Mckenzie</h3> <img src={dot} alt="hero" className='dot' /> </span>
-                  <h6 className=''>UK</h6>
-              </div>
-        </div>
-      </ul>
       </div>
     </div>
   )

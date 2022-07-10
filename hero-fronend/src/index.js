@@ -5,7 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Supporter from './Supporter';
-
+import Profile from './Components/Profile/Profile';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +13,8 @@ root.render(
   <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-          <Route path='/supporter' element={< Supporter/>} />
+        <Route path='/supporter' element={< Supporter/>} />
+        <Route path='/Profile:id' element={<Profile />}/>
       </Routes>
     </BrowserRouter>
 );
