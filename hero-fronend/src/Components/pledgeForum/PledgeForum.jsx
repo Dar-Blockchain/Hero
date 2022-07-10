@@ -16,29 +16,48 @@ const PledgeForum = () => {
         Email: "",
         Birth_date: "",
         City: "",
-        ExitesYouHero: "",
-        climatesChanges: "",
+        ExitesYouHero: [],
+        climatesChanges: [],
         MonthlySubs: ""
     })
 
 
+
+    const handleClick = (e) => {
+      if (e.target.name === "climatesChanges"){
+        setInput({
+          ...inputState,
+          [e.target.name]: [...inputState.climatesChanges, e.target.innerText],
+        })
+      }
+
+      if (e.target.name === "ExitesYouHero") {
+        setInput({
+          ...inputState,
+          [e.target.name]: [...inputState.ExitesYouHero, e.target.innerText],
+        })
+      }
+    }
 
     const handleChange = (e) => {
       setInput({
         ...inputState,
         [e.target.name]: e.target.value
     })
+    
     }
 
-  //   useEffect(() => {
-  //     axios.get(` https://hegemony.donftify.digital:8080/InserData`)
-  //         .then(res => {
-  //             console.log(res.data)
-  //         })
-  //         .catch(err => {
-  //             console.log(err)
-  //         })
-  // }, [])
+    useEffect(() => {
+      axios.post(`https://hegemony.donftify.digital:8080/InserData`,
+      
+      )
+          .then(res => {
+              console.log(res.data)
+          })
+          .catch(err => {
+              console.log(err)
+          })
+  }, [])
 
 
 
@@ -66,9 +85,9 @@ const PledgeForum = () => {
       <p className="p-headline">
       Which aspects of climate change concern you the most?        
       </p>
-      <button className="btn-c-m">Drought (water scarcity)</button>
-      <button className="btn-c-m w my-4">Severe weather/natural disasters</button>
-      <button className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
+      <button name='climatesChanges' onClick={handleClick} className="btn-c-m">Drought (water scarcity)</button>
+      <button name='climatesChanges' onClick={handleClick} className="btn-c-m w my-4">Severe weather/natural disasters</button>
+      <button name='climatesChanges' onClick={handleClick} className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
 
       <button onClick={() => setForum(2)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
     </div>
@@ -79,10 +98,10 @@ const PledgeForum = () => {
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
         What excites you more about HERO?</p>
-        <button className="btn-c-m">The ability to contribute directly to a climate mobilizer</button>
-        <button className="btn-c-m w mt-4">Having a vote on the governance and future of HERO</button>
-        <button className="btn-c-m w my-4">Getting direct feedback on the actions of the mobilizer</button>
-        <button className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
+        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m">The ability to contribute directly to a climate mobilizer</button>
+        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m w mt-4">Having a vote on the governance and future of HERO</button>
+        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m w my-4">Getting direct feedback on the actions of the mobilizer</button>
+        <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
 
         <button onClick={() => setForum(3)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
       </div>
