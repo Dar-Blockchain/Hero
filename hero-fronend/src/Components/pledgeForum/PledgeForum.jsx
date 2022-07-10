@@ -13,7 +13,7 @@ const PledgeForum = () => {
         </p>
         <input className="inputcash" type={"text"} placeholder="€ 20"/>
         <button className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
-        <p>We will let you know as soon as HERO is officially launched. You will then be part of the first HERO Supporters  in the world.</p>
+        <p className="p-end">We will let you know as soon as HERO is officially launched. You will then be part of the first HERO Supporters  in the world.</p>
 
       </div>
     </div>
