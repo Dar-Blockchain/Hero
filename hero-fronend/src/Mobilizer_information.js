@@ -1,6 +1,32 @@
 
 export const MobilizerData = [
     {
+        id: "Elijah",
+        name: "Elijah McKenzie",
+        profileDescription: "Co-Founder and Co-Executive at Waic Up | Environmental Advocate and Artist",
+        Email :"juanpablosierrasuarez@gmail.com",
+        LocationHighlight: "UK",
+        location: "London, UK",
+        phone: "57 (300) 7189525",
+        instagram: "IG: @elijahmckenziejackson",
+        mainMovements: "Fridays for Future UK",
+        TopCampaigns: ["No more fast fashion: campaigning to boycott brands with fast fashion business models, characterised by quick item turnover, low prices, exploitative working conditions for clothes manufacturers and an extremely high environmental footprint.", "Fossil fuel phaseout: Campaigning to stop Cambo and Jackdaw fossil fuel projects in the UK. Mobilising around the Fossil Fuel Non-Proliferation Treaty.", "Official ambassador for UN Together Band Official for Goals 13 and 14 on Climate Action and Life Below Water. UN Together Band Official is a global movement aiming to build a worldwide community of 1 billion citizens to achieve the 17 UN Sustainable Development Goals."],
+        Victories: ["Has spoken at the UK Parliament, the House of Lords, the EU Parliament, outside the G7 Conference, and in the Amazon rainforest about the climate crisis.", "Interviewed for The Nature of Change: an exclusive book and fundraising campaign featuring 15 youth climate activists from 11 countries. All profits go to climate crisis charities.", "Featured in GQ Turkey Magazine's Earth and sustainability edition featuring oil spill and plastic pollution 2019 visual art."],
+    },
+    {
+        id: "Julieta",
+        name: "Julieta Martinez",
+        profileDescription: "Founder Tremendas | Cofounder Latinas for climate | Activist UN Women",
+        Email :"julieta@tremendas.cl",
+        LocationHighlight: "Chile",
+        location: "Santiago, Chile",
+        phone: "",
+        instagram: "linktr.ee/julietamartinez",
+        mainMovements: "Pacto X El Clima Colombia Fridays For Future Bogotá United for Climate Action",
+        Victories: ["Guest speaker at the Youth for Climate Adaptation Conference. Speech focused on the importance of climate adaptation, not only mitigation, with a focus on vulnerable communities in order to build a just and resilient world.", "Widespread media coverage with Fridays for Future Bogotá across TV, newspaper and radio channels in Colombia raising awareness on a variety of climate issues.", "Represented Colombian and Latin American civil society voices at COP 26. Spoke to the President of Colombia about the country's shortcomings regarding climate action and the environmental leaders that continue to be persecuted for their work."],
+        TopCampaigns: ["Co-Director at Pacto X El Clima Colombia: Pacto's mission is to transform Latin American society with youth to build a more prosperous, equitable and peaceful world in harmony with the ecological environment through communication, education, art, research, and actions.", "Fridays for Future Bogotá: FFF is a youth-led and organised international climate strike movement of students walking out of school on Fridays, started by Greta Thunberg.", "United for Climate Action: U4CA is a diverse group of young people working toward greater accessibility and intersectioinality in international environmental decision-making spheres. U4CA aims to shift the balance of power primarily toward representation of regions seriously affected by the climate crisis by 2025."],
+    },
+    {
         id: "Jessica",
         name: "Jessica Kleczka",
         profileDescription: "Climate Psychology and Communication Researcher | Independent Advocate and Writer",
@@ -26,30 +52,6 @@ export const MobilizerData = [
         Victories: ["Guest speaker at the Youth for Climate Adaptation Conference. Speech focused on the importance of climate adaptation, not only mitigation, with a focus on vulnerable communities in order to build a just and resilient world.", "Widespread media coverage with Fridays for Future Bogotá across TV, newspaper and radio channels in Colombia raising awareness on a variety of climate issues.", "Represented Colombian and Latin American civil society voices at COP 26. Spoke to the President of Colombia about the country's shortcomings regarding climate action and the environmental leaders that continue to be persecuted for their work."],
         TopCampaigns: ["Co-Director at Pacto X El Clima Colombia: Pacto's mission is to transform Latin American society with youth to build a more prosperous, equitable and peaceful world in harmony with the ecological environment through communication, education, art, research, and actions.", "Fridays for Future Bogotá: FFF is a youth-led and organised international climate strike movement of students walking out of school on Fridays, started by Greta Thunberg.", "United for Climate Action: U4CA is a diverse group of young people working toward greater accessibility and intersectioinality in international environmental decision-making spheres. U4CA aims to shift the balance of power primarily toward representation of regions seriously affected by the climate crisis by 2025."],
     },
-    {
-        id: "Julieta",
-        name: "Julieta Martinez",
-        profileDescription: "Founder Tremendas | Cofounder Latinas for climate | Activist UN Women",
-        Email :"julieta@tremendas.cl",
-        LocationHighlight: "Chile",
-        location: "Santiago, Chile",
-        phone: "",
-        instagram: "linktr.ee/julietamartinez",
-        mainMovements: "Pacto X El Clima Colombia Fridays For Future Bogotá United for Climate Action",
-        Victories: ["Guest speaker at the Youth for Climate Adaptation Conference. Speech focused on the importance of climate adaptation, not only mitigation, with a focus on vulnerable communities in order to build a just and resilient world.", "Widespread media coverage with Fridays for Future Bogotá across TV, newspaper and radio channels in Colombia raising awareness on a variety of climate issues.", "Represented Colombian and Latin American civil society voices at COP 26. Spoke to the President of Colombia about the country's shortcomings regarding climate action and the environmental leaders that continue to be persecuted for their work."],
-        TopCampaigns: ["Co-Director at Pacto X El Clima Colombia: Pacto's mission is to transform Latin American society with youth to build a more prosperous, equitable and peaceful world in harmony with the ecological environment through communication, education, art, research, and actions.", "Fridays for Future Bogotá: FFF is a youth-led and organised international climate strike movement of students walking out of school on Fridays, started by Greta Thunberg.", "United for Climate Action: U4CA is a diverse group of young people working toward greater accessibility and intersectioinality in international environmental decision-making spheres. U4CA aims to shift the balance of power primarily toward representation of regions seriously affected by the climate crisis by 2025."],
-    },
-    {
-        id: "Elijah",
-        name: "Elijah McKenzie",
-        profileDescription: "Co-Founder and Co-Executive at Waic Up | Environmental Advocate and Artist",
-        Email :"juanpablosierrasuarez@gmail.com",
-        LocationHighlight: "UK",
-        location: "London, UK",
-        phone: "57 (300) 7189525",
-        instagram: "IG: @elijahmckenziejackson",
-        mainMovements: "Fridays for Future UK",
-        TopCampaigns: ["No more fast fashion: campaigning to boycott brands with fast fashion business models, characterised by quick item turnover, low prices, exploitative working conditions for clothes manufacturers and an extremely high environmental footprint.", "Fossil fuel phaseout: Campaigning to stop Cambo and Jackdaw fossil fuel projects in the UK. Mobilising around the Fossil Fuel Non-Proliferation Treaty.", "Official ambassador for UN Together Band Official for Goals 13 and 14 on Climate Action and Life Below Water. UN Together Band Official is a global movement aiming to build a worldwide community of 1 billion citizens to achieve the 17 UN Sustainable Development Goals."],
-        Victories: ["Has spoken at the UK Parliament, the House of Lords, the EU Parliament, outside the G7 Conference, and in the Amazon rainforest about the climate crisis.", "Interviewed for The Nature of Change: an exclusive book and fundraising campaign featuring 15 youth climate activists from 11 countries. All profits go to climate crisis charities.", "Featured in GQ Turkey Magazine's Earth and sustainability edition featuring oil spill and plastic pollution 2019 visual art."],
-    }
+
+
 ]
