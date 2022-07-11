@@ -7,10 +7,10 @@ import mobilizers from '../../Assets/HERO Brand Assets/Logo_bluepng.png'
 import "./Profile.css"
 import dot from '../../Assets/HERO Brand Assets/bluedot.png'
 import play from '../../Assets/HERO Brand Assets/Play.svg'
-import personn from '../../Assets/HERO Brand Assets/Group 2.svg'
-import leaf from '../../Assets/HERO Brand Assets/Group 1.svg'
+
 import { Link } from 'react-router-dom';
 import vicdot from '../../Assets/HERO Brand Assets/Group 307.svg'
+import Campaigns from './campaigns/Campaigns';
 const Profile = () => {
   const { id } = useParams();
   const [profile, setProfile] = useState();
@@ -62,65 +62,14 @@ const Profile = () => {
   return (
     <div className="container-fluid ">
       {cmpdropdown === true &&
-        <div className="container TopCampaigns d-flex flex-column">
-          <button className="closebtn align-self-end" onClick={closeCamp}>X</button>
-          <h5 className="ccmp mx-auto">Current Campaigns</h5>
-          {/* {profile ? (
-            profile.TopCampaigns.map((value, index) =>{
-              <p>
-                
-              </p>
-            })
-        ):("")} */}
-          <div className='d-flex flex-column justify-content-center align-items-center' >
-            <div className='d-flex flex-column justify-content-center cmpcard'>
-              <div className="d-flex">
-                <img src={personn} className="col-1" />
-
-                <b className="cmp-title col-10 mx-auto">Adolescent Empowerment</b>
-              </div>
-              <small className="cmp-subtitle col-9 mx-auto">Tremendas Foundation</small>
-              <p className="cmp-t col-9 mx-auto">In progress</p>
-              <p className="cmp-p col-9 mx-auto">
-                Promoting the empowerment of adolescents and young people by inviting them to put their skills and talents at the service of the community to generate social impact.
-              </p>
-
-            </div>
-            <div className='d-flex flex-column justify-content-center'>
-              <span className="d-flex">
-                <img src={personn} className="col-1" />
-                <b className="cmp-title col-10 mx-auto">Youth Task Force</b>
-              </span>
-              <small className="cmp-subtitle col-9 mx-auto">UN Women</small>
-              <p className="cmp-t col-9 mx-auto">In progress</p>
-              <p className="cmp-p col-9 mx-auto">
-                Leadership and youth participation in the next Generation Equality Forum, a global meeting focused on civil society for gender equality.          </p>
-
-            </div>
-            <div className='d-flex flex-column justify-content-center'>
-              <span className="d-flex">
-                <img src={leaf} className="col-1" />
-                <b className="cmp-title col-10 mx-auto">International Network of Young Latin American Activists</b>
-              </span>
-              <small className="cmp-subtitle col-9 mx-auto">Latinas for Climate</small>
-              <p className="cmp-t col-9 mx-auto">In progress</p>
-              <p className="cmp-p col-9 mx-auto">
-                Latinas for Climate seeks to raise awareness about the climate crisis with a gender, Human Rights and Latin perspective, in order to educate girls, young people and women in the region on this issue so that they become empowered and begin to take action for a better future.
-              </p>
-
-            </div>
-          </div>
-
-
-
-        </div>
+          <Campaigns profileCmp={profile.TopCampaigns} />
 
       }
 
       {vcdropdown === true &&
         <div className="container Victories d-flex flex-column">
           <button className="closebtn align-self-end" onClick={closeVcd}>X</button>
-          <h5 className="ccmp mx-auto">Victoriess</h5>
+          <h5 className="ccmp mx-auto">Victories</h5>
           {/* {profile ? (
             profile.TopCampaigns.map((value, index) =>{
               <p>
@@ -189,7 +138,7 @@ const Profile = () => {
                   <span className="d-flex"><h5 className='profileName'>{profile.name}</h5> <img className='dot' src={dot} /></span>
                   <p className='locationHighlight'>{profile.LocationHighlight}</p>
                   <p className='profileDescription'>{profile.profileDescription}</p>
-                  <p className="smedia">{profile.instagram}</p>
+                  <p className="smedia">{profile.sm}</p>
                 </div>
               </div>
               {profile.id === "Julieta" ? (
