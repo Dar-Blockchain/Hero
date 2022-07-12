@@ -89,10 +89,10 @@ const Profile = () => {
             <div className="container d-flex flex-column justify-content-center align-items-center">
               <div className="hero-card d-flex">
                 <span id={"Profile" + profile.id}></span>
-                <div className='d-flex flex-column'>
-                  <span className="d-flex"><h5 className='profileName'>{profile.name}</h5> <img className='dot' src={dot} /></span>
-                  <p className='locationHighlight'>{profile.LocationHighlight}</p>
-                  <p className='profileDescription'>{profile.profileDescription}</p>
+                <div className='d-flex flex-column mb-0'>
+                  <span className="d-flex "><h5 className='profileName mb-0'>{profile.name}</h5> <img className='dot' src={dot} /></span>
+                  <p className='locationHighlight mb-0'>{profile.LocationHighlight}</p>
+                  <p className='profileDescription mb-0'>{profile.profileDescription}</p>
                   <p className="smedia">{profile.sm}</p>
                 </div>
               </div>
