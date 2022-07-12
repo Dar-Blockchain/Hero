@@ -220,6 +220,15 @@ border-radius: 30px;
     border: none;
     height: 30px;
 }
+.speakerIcon {
+    width: 12.67px;
+    height: 12.55px;
+    margin-right: 6px;
+}
+
+.whitesmthn {
+    margin-right: 6px;
+}
 
 .causebtn.last {
     margin-top: 15px;    

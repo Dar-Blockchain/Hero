@@ -6,6 +6,8 @@ import { useState } from 'react';
 import mobilizers from '../../Assets/HERO Brand Assets/Logo_bluepng.png'
 import "./Profile.css"
 import dot from '../../Assets/HERO Brand Assets/bluedot.png'
+import speakerIcon from '../../Assets/HERO Brand Assets/speakerIcon.png'
+import whitesmthn from '../../Assets/HERO Brand Assets/whitesmthn.svg'
 import play from '../../Assets/HERO Brand Assets/Play.svg'
 import Victories from './victories/victories';
 import { Link } from 'react-router-dom';
@@ -101,8 +103,8 @@ const Profile = () => {
               ) : ("")}
 
               <div className="tb row">
-                <button onClick={campHandler} className="col-6 cmp">Campaigns</button>
-                <button onClick={vcdHandler} className="col-6 vic">Victories</button>
+                <button onClick={campHandler} className="col-6 cmp"><img src={speakerIcon} className="speakerIcon" /> Campaigns</button>
+                <button onClick={vcdHandler} className="col-6 vic"><img src={whitesmthn} className="whitesmthn" />Victories</button>
               </div>
               <div className="ladesc w-100 d-flex flex-column align-items-center justify-content-center">
                 <b>Launch is one month away!</b>
