@@ -4,7 +4,7 @@ import './Supporter.css'
 import mobilizersLogowhite from './Assets/MobilizersPhotos/mobilizersLogowhite.svg'
 import ProfilesList from './Components/ProfilesList/ProfilesList'
 import { useState } from 'react'
-
+import { Link } from 'react-router-dom'
 const Supporter = () => {
 
 
@@ -53,7 +53,7 @@ const Supporter = () => {
 
       {Dropdown === "off" && 
             <div className="heroo container-fluid d-flex flex-column justify-content-center align-items-center">
-            <img src={logo} alt="Hero Logo Blue" srcSet={logo} className='blueLogo' />
+            <Link to="/"><img src={logo} alt="Hero Logo Blue" srcSet={logo} className='blueLogo' /></Link>
             <div className='Card d-flex justify-content-center align-items-center browse-p'><p>Browse the first HERO Mobilizers with a verified track record on climate action.</p></div>
             <button className='ds-h' onClick={handleDropdown}>Discover how HERO Mobilizers are verified</button>
             <p className='co-p'>Click on the mobilizers to see their profiles.</p>

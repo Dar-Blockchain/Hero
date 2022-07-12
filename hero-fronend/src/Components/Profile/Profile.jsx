@@ -79,7 +79,7 @@ const Profile = () => {
         <div className="container d-flex flex-column align-items-center Profile pt-5">
 
 
-          <img src={mobilizers} id="logo" />
+          <Link to={"/"}><img src={mobilizers} id="logo" /></Link>
           {profile && (
             <div className="container d-flex flex-column justify-content-center align-items-center ">
               <div className="hero-card w-100 d-flex align-items-center">
