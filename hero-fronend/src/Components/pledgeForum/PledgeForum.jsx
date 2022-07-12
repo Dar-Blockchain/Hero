@@ -60,13 +60,18 @@ const PledgeForum = () => {
           setForum(2)}) 
       }
 
+      const handleClose = (e) => {
+        e.preventDefault()
+        window.location.href = "/supporter"
+      }
+
 
 
 
 
   return (
     <div className='pledgeForum container d-flex flex-column px-4 py-5 justify-content-center'>
-      <button className="closebtn align-self-end" >X</button>
+      <button onClick={handleClose} className="closebtn align-self-end" >X</button>
       
       {forum === 0 &&  
       (<div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
