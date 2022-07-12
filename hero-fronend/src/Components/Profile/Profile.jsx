@@ -13,15 +13,19 @@ import Campaigns from './campaigns/Campaigns';
 const Profile = () => {
   const { id } = useParams();
   const [profile, setProfile] = useState();
+  const [users, setUsers] = useState([]);
   const [cmpdropdown, setcmpDropdown] = useState(false);
   const [vcdropdown, setvcDropdown] = useState(false);
 
   useEffect(() => {
     if (!profile) {
+      
       MobilizerData.map((value, index) => {
+      if (index === 4) {return}
+        setUsers(users => [...users, value.name])
+        console.log(users)
         if (value.name == id.substring(1)) {
           setProfile(value)
-
         }
       })
     }
@@ -39,7 +43,10 @@ const Profile = () => {
   }
 
 
-
+  const btnProfile = (e) => {
+    e.preventDefault();
+    window.location.replace(e.target.name)
+  } 
 
 
 
@@ -105,9 +112,12 @@ const Profile = () => {
               <div className="d-flex flex-column cause justify-content-center align-items-center">
                 <h5 className="mx-auto">Works on same causes as</h5>
                 <div className="row">
-                  <button className='col-5 mx-auto causebtn'>Juan Sierra</button>
-                  <button className='col-5 mx-auto causebtn'>Jessica Klezcka</button>
-                  <button className='col-6 mx-auto causebtn last'>Elijah Mckenzie</button>
+                  {users.map((user) =>
+                   {if (user !== profile.name) {
+                    return <button onClick={btnProfile} name={"/profile:" + user} className='col-5 mx-auto mt-2 causebtn'>{user}</button>
+                   }}
+                  )}
+                  {/* <button className='col-6 mx-auto causebtn last'>Elijah Mckenzie</button> */}
                 </div>
 
               </div>
