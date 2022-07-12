@@ -87,7 +87,7 @@ const Profile = () => {
           <img src={mobilizers} id="logo" />
           {profile && (
             <div className="container d-flex flex-column justify-content-center align-items-center">
-              <div className="hero-card d-flex">
+              <div className="hero-card w-100 d-flex">
                 <span id={"Profile" + profile.id}></span>
                 <div className='d-flex flex-column mb-0'>
                   <span className="d-flex "><h5 className='profileName mb-0'>{profile.name}</h5> <img className='dot' src={dot} /></span>
@@ -97,7 +97,7 @@ const Profile = () => {
                 </div>
               </div>
               {profile.id === "Julieta" ? (
-                <div className="d-flex align-items-center justify-content-center" id={"Play" + profile.id}>
+                <div className="d-flex align-items-center justify-content-center w-100" id={"Play" + profile.id}>
                   <img className="align-self-center" src={play} />
                 </div>
               ) : ("")}
