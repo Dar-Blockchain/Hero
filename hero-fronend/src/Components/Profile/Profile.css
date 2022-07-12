@@ -159,8 +159,12 @@ height: 201px;
 background: #0000FF;
 border-radius: 30px;
 margin-top: 20px;
+margin-bottom: 20px;
 }
 
+.wt {
+    margin-top: 20px;
+}
 
 .ladesc b {
     font-style: italic;
@@ -209,8 +213,9 @@ border-radius: 30px;
 }
 
 .causebtn {
-background: #0000FF;
-border-radius: 30px;
+    margin-top: 22px;
+    background: #0000FF;
+    border-radius: 30px;
     color: #FFFFFF;
     border: none;
     height: 30px;

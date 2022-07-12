@@ -110,11 +110,11 @@ const Profile = () => {
                 <Link to={"/forum"} state={ {from: profile.name} }><button >Make a pledge</button></Link>
               </div>
               <div className="d-flex flex-column cause justify-content-center align-items-center">
-                <h5 className="mx-auto">Works on same causes as</h5>
+                <h5 className="mx-auto wt">Works on same causes as</h5>
                 <div className="row">
                   {users.map((user) =>
                    {if (user !== profile.name) {
-                    return <button onClick={btnProfile} name={"/profile:" + user} className='col-5 mx-auto mt-2 causebtn'>{user}</button>
+                    return <button onClick={btnProfile} name={"/profile:" + user} className='col-5 mx-auto causebtn'>{user}</button>
                    }}
                   )}
                   {/* <button className='col-6 mx-auto causebtn last'>Elijah Mckenzie</button> */}
