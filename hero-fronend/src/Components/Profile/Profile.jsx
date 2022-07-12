@@ -25,10 +25,10 @@ const Profile = () => {
       MobilizerData.map((value, index) => {
       if (index === 4) {return}
         setUsers(users => [...users, value.name])
-        console.log(users)
         if (value.name == id.substring(1)) {
           setProfile(value)
         }
+
       })
     }
   })
@@ -39,10 +39,7 @@ const Profile = () => {
     setvcDropdown(true)
   }
 
-  function closeVcd(e) {
-    e.preventDefault();
-    setvcDropdown(false)
-  }
+
 
 
   const btnProfile = (e) => {
@@ -59,10 +56,7 @@ const Profile = () => {
     setcmpDropdown(true)
   }
 
-  function closeCamp(e) {
-    e.preventDefault();
-    setcmpDropdown(false)
-  }
+
 
 
 
@@ -75,7 +69,8 @@ const Profile = () => {
       }
 
       {vcdropdown === true &&
-        <Victories ProfileVc={profile.Victories}/>
+      
+        <Victories profileVc={profile.Victories}/>
       }
 
 

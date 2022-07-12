@@ -24,12 +24,15 @@ export const MobilizerData = [
     ],
 
 
+    Victories: [
+        {title: "Has spoken at the UK Parliament",  campaign:"the House of Lords", status: "Completed" , desc: ", the EU Parliament, outside the G7 Conference, and in the Amazon rainforest about the climate crisis."},
+        {title:"Interviewed for The Nature of Change",campaign: "The Nature of Change" , status: "Completed" ,desc: "an exclusive book and fundraising campaign featuring 15 youth climate activists from 11 countries. All profits go to climate crisis charities."},
+        {title:"Featured in GQ Turkey Magazine", campaign: "Earth and sustainability edition", status: "Completed" , desc: "Featured in GQ Turkey Magazine's Earth and sustainability edition featuring oil spill and plastic pollution 2019 visual art."}
+    ],
+    
 
 
-
-
-        Victories: ["Has spoken at the UK Parliament, the House of Lords, the EU Parliament, outside the G7 Conference, and in the Amazon rainforest about the climate crisis.", "Interviewed for The Nature of Change: an exclusive book and fundraising campaign featuring 15 youth climate activists from 11 countries. All profits go to climate crisis charities.", "Featured in GQ Turkey Magazine's Earth and sustainability edition featuring oil spill and plastic pollution 2019 visual art."],
-    },
+},
     {
         id: "Julieta",
         name: "Julieta Martinez",
