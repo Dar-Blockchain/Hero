@@ -43,20 +43,20 @@ color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    background-position: 10%;
+    background-position: 10% 55%;
 }
 #JulietaItem {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Julieta\ Martinez.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 10%
+    background-position: 10% 70%;
 }
 
 #JessicaItem {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Jessica\ Klezcka.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 10% 30%!important;
+    background-position: 10% 37% !important;
 }
 
 #JuanItem {

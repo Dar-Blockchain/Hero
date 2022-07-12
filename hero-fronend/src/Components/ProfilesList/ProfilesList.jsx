@@ -15,9 +15,9 @@ const ProfilesList = () => {
                 pathname: `/Profile:${value.name}`,
                 }}>
                     
-                  <div >
-                      <span className='d-flex'><h3 className="card-headline">{value.name}</h3> <img src={dot} alt="hero" className='dot' /> </span>
-                      <h6 className=''>{value.LocationHighlight}</h6>
+                  <div className="mt-3">
+                      <span className='d-flex'><h3 className="card-headline mb-0">{value.name}</h3> <img src={dot} alt="hero" className='dot' /> </span>
+                      <h6 className='mb-0'>{value.LocationHighlight}</h6>
                   </div>
             </Link>
             </li>
