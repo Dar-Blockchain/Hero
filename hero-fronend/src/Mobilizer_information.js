@@ -1,6 +1,7 @@
 
 export const MobilizerData = [
     {
+        // re form this pls
         id: "Elijah",
         name: "Elijah McKenzie",
         profileDescription: "Co-Founder and Co-Executive at Waic Up | Environmental Advocate and Artist",

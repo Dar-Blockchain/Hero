@@ -2,7 +2,7 @@ import React from 'react'
 import { MobilizerData } from '../../../Mobilizer_information';
 import personn from '../../../Assets/HERO Brand Assets/Group 2.svg'
 import leaf from '../../../Assets/HERO Brand Assets/Group 1.svg'
-const Campaigns = (profileCmp) => {
+const Campaigns = ({profileCmp}) => {
 
   return (
     <>
@@ -12,20 +12,20 @@ const Campaigns = (profileCmp) => {
           <h5 className="ccmp mx-auto">Current Campaigns</h5>
           <div className='d-flex flex-column justify-content-center align-items-center' >
           {profileCmp && 
-            profileCmp.map((index, value) => {
-                <div className='d-flex flex-column justify-content-center cmpcard'>
+            profileCmp.map((value, index) =>
+            
+               <div key={index} className='d-flex flex-column justify-content-center cmpcard'>
                 <div className="d-flex">
                   <img src={personn} className="col-1" />
-
-                  <b className="cmp-title col-10 mx-auto">{profileCmp.title}</b>
+                  <b className="cmp-title col-10 mx-auto">{value.title}</b>
                 </div>
-                <small className="cmp-subtitle col-9 mx-auto">{profileCmp.campaign}</small>
-                <p className="cmp-t col-9 mx-auto">{profileCmp.status}</p>
+                <small className="cmp-subtitle col-9 mx-auto">{value.campaign}</small>
+                <p className="cmp-t col-9 mx-auto">{value.status}</p>
                 <p className="cmp-p col-9 mx-auto">
-                {profileCmp.desc}                
+                {value.desc}                
                 </p>
               </div>
-            })
+            )
           } 
           </div>
 
