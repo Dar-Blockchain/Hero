@@ -81,13 +81,13 @@ const Profile = () => {
 
 
       {(cmpdropdown === false && vcdropdown === false)  &&
-        <div className="container d-flex flex-column align-items-center Profile">
+        <div className="container d-flex flex-column align-items-center Profile pt-5">
 
 
           <img src={mobilizers} id="logo" />
           {profile && (
-            <div className="container d-flex flex-column justify-content-center align-items-center">
-              <div className="hero-card w-100 d-flex">
+            <div className="container d-flex flex-column justify-content-center align-items-center ">
+              <div className="hero-card w-100 d-flex align-items-center">
                 <span id={"Profile" + profile.id}></span>
                 <div className='d-flex flex-column mb-0'>
                   <span className="d-flex "><h5 className='profileName mb-0'>{profile.name}</h5> <img className='dot' src={dot} /></span>

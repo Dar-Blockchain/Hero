@@ -72,25 +72,31 @@ color: #0000FF;
     /* width: 79px; */
     width: 130px;
     height: 77.45px;
-    border-radius: 100px / 50px;
-    margin-right: 19px;
+    border-radius: 50%;
+    margin: 19px;
     }
 #ProfileJulieta {
     background: url(../../Assets/MobilizersPhotos/Julieta_Profile\ Picture.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 130px;    height: 79px;
-    border-radius: 100px / 50px;
-    margin-right: 19px;
+    background-position: top;
+    /* width: 79px; */
+    width: 130px;
+    height: 77.45px;
+    border-radius: 50%;
+    margin: 19px;
 }
 
 #ProfileJessica {
     background: url(../../Assets/MobilizersPhotos/Jessica\ Klezcka.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 130px;    height: 79px;
-    border-radius: 100px / 50px;
-    margin-right: 19px;
+    background-position: top;
+    /* width: 79px; */
+    width: 130px;
+    height: 77.45px;
+    border-radius: 50%;
+    margin: 19px;
 }
 
 #ProfileJuan {
@@ -98,8 +104,8 @@ color: #0000FF;
     background-size: cover;
     background-repeat: no-repeat;
     width: 130px;    height: 79px;
-    border-radius: 100px / 50px;
-    margin-right: 19px;
+    border-radius: 50%;
+    margin: 19px;
 }
 
 
