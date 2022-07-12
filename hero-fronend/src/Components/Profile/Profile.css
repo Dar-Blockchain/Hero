@@ -13,7 +13,7 @@
 
 .hero-card {
 width: 326px;
-height: 125px;
+min-height: 125px;
 background: #FFFFFF;
 border-radius: 20px;
 }
@@ -81,7 +81,7 @@ color: #0000FF;
     background-size: cover;
     background-repeat: no-repeat;
     width: 130px;    height: 79px;
-    border-radius: 50%;
+    border-radius: 100px / 50px;
     margin-right: 19px;
 }
 
@@ -90,7 +90,7 @@ color: #0000FF;
     background-size: cover;
     background-repeat: no-repeat;
     width: 130px;    height: 79px;
-    border-radius: 50%;
+    border-radius: 100px / 50px;
     margin-right: 19px;
 }
 
@@ -99,7 +99,7 @@ color: #0000FF;
     background-size: cover;
     background-repeat: no-repeat;
     width: 130px;    height: 79px;
-    border-radius: 50%;
+    border-radius: 100px / 50px;
     margin-right: 19px;
 }
 
@@ -116,6 +116,7 @@ color: #0000FF;
 }
 
 .tb {
+    width: 100%;
     margin-top: 21px;
 }
 

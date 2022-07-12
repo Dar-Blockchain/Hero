@@ -84,7 +84,7 @@ const Profile = () => {
 
           <img src={mobilizers} id="logo" />
           {profile && (
-            <div>
+            <div className="container d-flex flex-column justify-content-center align-items-center">
               <div className="hero-card d-flex">
                 <span id={"Profile" + profile.id}></span>
                 <div className='d-flex flex-column'>
@@ -104,7 +104,7 @@ const Profile = () => {
                 <button onClick={campHandler} className="col-6 cmp">Campaigns</button>
                 <button onClick={vcdHandler} className="col-6 vic">Victories</button>
               </div>
-              <div className="ladesc d-flex flex-column align-items-center justify-content-center">
+              <div className="ladesc w-100 d-flex flex-column align-items-center justify-content-center">
                 <b>Launch is one month away!</b>
                 <p>Take action on climate change by pledging to fund your favourite mobilizer upon launch.</p>
                 <Link to={"/forum"} state={ {from: profile.name} }><button >Make a pledge</button></Link>
