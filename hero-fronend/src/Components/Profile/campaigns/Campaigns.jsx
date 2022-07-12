@@ -12,7 +12,7 @@ const Campaigns = ({profileCmp}) => {
     <>
     {/* onClick={closeCamp} */}
     <div className="container TopCampaigns d-flex flex-column">
-          <button name={profileId} onClick={closeHandler} className="closebtn align-self-end">X</button>
+          <button onClick={closeHandler} className="closebtn align-self-end">X</button>
           <h5 className="ccmp mx-auto">Current Campaigns</h5>
           <div className='d-flex flex-column justify-content-center align-items-center' >
           {profileCmp && 

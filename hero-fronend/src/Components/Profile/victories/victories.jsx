@@ -2,10 +2,14 @@ import React from 'react'
 import vicdot from '../../../Assets/HERO Brand Assets/Group 307.svg'
 
 const Victories = (ProfileVc) => {
+  const closeHandler = (e) => {
+    e.preventDefault();
+    window.location.reload()
     
+  }
   return (
     <div className="container Victories d-flex flex-column">
-    <button className="closebtn align-self-end" >X</button>
+    <button className="closebtn align-self-end" onClick={closeHandler} >X</button>
     <h5 className="ccmp mx-auto">Victories</h5>
     {/* {profile ? (
       profile.TopCampaigns.map((value, index) =>{
