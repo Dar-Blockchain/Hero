@@ -106,7 +106,7 @@ function App() {
                       <p className='hero-headline-last'>
                       The first crowdfunding platform<br/> providing a Basic Income for<br/> climate mobilizers with the most<br /> impact on policy today.
                       </p>
-                      <button name="second" onClick={nextPage} className="btn-hero">Click here if you want do more</button>
+                      <Link to="/supporter"><button className="btn-hero">Click here if you want do more</button></Link>
                   </div>
       }
     </div>
