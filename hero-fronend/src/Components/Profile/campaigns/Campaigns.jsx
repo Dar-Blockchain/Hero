@@ -2,6 +2,7 @@ import React from 'react'
 import { MobilizerData } from '../../../Mobilizer_information';
 import personn from '../../../Assets/HERO Brand Assets/Group 2.svg'
 import leaf from '../../../Assets/HERO Brand Assets/Group 1.svg'
+import "./Campaigns.css"
 const Campaigns = ({profileCmp}) => {
   const closeHandler = (e) => {
     e.preventDefault();
