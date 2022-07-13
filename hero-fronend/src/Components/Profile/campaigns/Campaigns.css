@@ -8,41 +8,46 @@
 
 
 .cmp-title {
+    font-family: 'Seravek';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
+    
     /* or 157% */
     display: flex;
     align-items: center;
-    color: #ffffff;
+    
+    color: #FFFFFF;
     
   }
   
   .cmp-subtitle {
+    font-family: 'Seravek';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-  
+    
     /* or 157% */
     display: flex;
     align-items: center;
-  
-    color: #ffffff;
+    
+    color: #FFFFFF;
   }
   
   .cmp-t {
+    font-family: 'Seravek';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 22px;
-  
+    
     /* or 157% */
     display: flex;
     align-items: center;
-  
-    color: #ffffff;
+    
+    color: #FFFFFF;
   }
   
   .cmp-p {
@@ -50,24 +55,32 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-  
+    
     /* or 114% */
     display: flex;
     align-items: center;
     text-align: justify;
-  
-    color: #ffffff;
+    
+    color: #FFFFFF;
   }
-  .ccmp {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 22px;
-  
-    /* or 88% */
-    display: flex;
-    align-items: center;
-  
-    color: #ffffff;
-    margin-bottom: 37px;
+
+
+  .icon-p {
+    margin-right: -26px;
   }
+
+  .cmpcard {
+    padding-left: 40px;
+    padding-right: 42px;
+  }
+
+  #cmpcard1 {
+    margin-top: 22px;
+    margin-bottom: 23px;
+  }
+
+  #cmpcard0 {
+    margin-top: 37px;
+  }
+
+  

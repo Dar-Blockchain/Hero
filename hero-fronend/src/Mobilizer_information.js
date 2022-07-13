@@ -91,17 +91,17 @@ export const MobilizerData = [
             title: "TEDx talk ",
             campaign: "TEDx Aberystwyth",
             status: "Completed",
-            desc: ":Dismantling the way we think about climate change. Spoke about the public's perception of the climate crisis and what factors influence how people think and talk about it."
+            desc: "Dismantling the way we think about climate change. Spoke about the public's perception of the climate crisis and what factors influence how people think and talk about it."
         },            
         {
-            title: "Interviewed by Gastivists",
-            campaign: "the Stop Cambo oil field interview series",
+            title: "Interviewed by astivists",
+            campaign: "Stop Cambo oil field interview series",
             status: "Completed",
             desc: "Spoke to Ya'ara Peretz about energy security, new models of extraction, and how the proposed EastMed pipeline is fueling geopolitical conflicts."
         },
         {
             title:"Interviewed on the Story Anew podcast",
-            campaign:"shifting public consciousness about climate change.",
+            campaign:"Shifting public consciousness about climate change.",
             status:"Completed",
             desc: "Spoke about why it is important that climate policy reflects human psychology, the role of the media in shifting our values, and the challenges of fighting for systemic change."
         }

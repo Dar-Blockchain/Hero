@@ -44,7 +44,7 @@ function App() {
         <div className="d-flex flex-column justify-content-center align-items-center">
           <img src={whiteLogo} className="logo" />
           <img src={fHero} id="fHero" />
-          <small>
+          <small className="f-t">
             Anuna de Wever<br />
             HERO Supporter / Belgium
           </small>
