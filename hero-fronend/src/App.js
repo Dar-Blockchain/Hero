@@ -49,9 +49,9 @@ function App() {
             HERO Supporter / Belgium
           </small>
           <p className="hero-headline">Do you want to do more<br/> for the climate but just don’t know how?</p>
-          <button name="second" onClick={nextPage} className="btn-hero">Click here if you want do more</button>
+          <button name="second" onClick={nextPage} className="btn-hero">Click here to test the HERO app</button>
           <p className="hero-f-p">
-            Stanford Social Innovation Review estimates that funding climate mobilizers can be 100x more efficient on reducing carbon emissions than buying carbon credits.
+            Stanford Social Innovation Review estimates that funding climate mobilizers can be <b>100x</b> more efficient on reducing carbon emissions than buying carbon credits.
           </p>
         </div>
       }
