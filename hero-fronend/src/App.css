@@ -1,57 +1,17 @@
 .App 
 {
+  font-family: 'Seravek';
   background: linear-gradient(180deg, #0000FF 0%, #FFFFFF 131.8%);
   color: white;
   min-height: 100vh;
+  justify-content: center;
+
 }
+
 
 .logo {
   width: 153.75px;height: 35.49px;
 }
-
-.women {
-  width: 223px;
-  height: 223px;
-}
-
-.headline {
-  width: 305px;
-height: 85px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 28px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
-  margin-bottom: 14px;
-}
-
-
-.headline-desc {
-  width: 305px;
-height: 87px;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-
-/* or 143% */
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-}
-
-
-.herodot {
-  height: 10.33px;
-  width: 8.64px;
-}
-
 
 .btn-hero {
   background-color: white;
@@ -60,14 +20,140 @@ color: #FFFFFF;
   font-weight: 700;
   font-size: 16px;
   line-height: 15px;
-  width: 268px;
   height: 48px;
   background: #FFFFFF;
   border-radius: 30px;
   border: none;
+  margin-bottom: 34px;
+  padding: 8px 19px 8px 18px;
 }
 
-ul {
-  list-style: none;
 
+
+
+#fHero{
+  margin-top: 40px;
+  width: 218px;
+  height: 218px;
+}
+
+
+small {
+  margin-top: 11px;
+  margin-bottom: 18px;
+  /* max-width: 119px;
+  max-height: 23px; */
+
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+small.s-t {
+  color: #0000FF;
+  margin-bottom: 22px;
+}
+
+.hero-f-p {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+
+/* or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.hero-headline {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 28px;
+
+/* or 112% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+margin-bottom: 18px;
+}
+
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+ul li p {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+/* or 138% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #191919;
+}
+
+ul li img {
+  width: 19px;
+height: 23.43px;
+margin-bottom: 12.57px;
+}
+
+.hero-t-headline {
+  font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 28px;
+
+/* or 112% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #0000FF;
+}
+
+
+.hero-headline-last {
+  margin-top: 14.51px;
+  margin-bottom: 15px;
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+
+/* or 133% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+#nextBtn {
+  background: transparent;
+  border: none;
 }
