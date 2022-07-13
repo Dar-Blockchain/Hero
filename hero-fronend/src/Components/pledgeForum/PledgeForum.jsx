@@ -6,7 +6,6 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios'
-import Toastbox, { toast } from "react-toastbox";
 
 const PledgeForum = () => {
   const [forum, setForum] = useState(0);
@@ -80,7 +79,6 @@ const PledgeForum = () => {
         e.preventDefault();
         if(form === 1){
           if (!inputState.MonthlySubs) {
-            toast.error("You should enter an amount");
             return;
           }
           setForum(1)
@@ -121,7 +119,7 @@ const PledgeForum = () => {
       <button name='climatesChanges' onClick={handleClick} className="btn-c-m my-4">Severe weather/natural disasters</button>
       <button name='climatesChanges' onClick={handleClick} className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
 
-      <button onClick={() => setForum(2)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
+      <button onClick={() => setForum(2)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
     </div>
     }
 
@@ -135,7 +133,7 @@ const PledgeForum = () => {
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m my-4">Getting direct feedback on the actions of the mobilizer</button>
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
 
-        <button onClick={() => setForum(3)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
+        <button onClick={() => setForum(3)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
       </div>
 
         }
