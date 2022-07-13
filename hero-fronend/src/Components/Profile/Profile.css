@@ -1,334 +1,342 @@
 .Profile {
-    background: #F5F5F5;
-    min-height: 100vh;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-
+  background: #f5f5f5;
+  min-height: 100vh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 #logo {
-    width: 153.75px;
-    height: 35.49px;
-    margin-bottom: 35px;
+  width: 153.75px;
+  height: 35.49px;
+  margin-bottom: 35px;
 }
 
 .hero-card {
-min-height: 125px;
-background: #FFFFFF;
-border-radius: 20px;
+  min-height: 125px;
+  background: #ffffff;
+  border-radius: 20px;
 }
 
 .profileName {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    display: flex;
-    align-items: center;
-    margin-right: 5px;
-    color: #0000FF;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  color: #0000ff;
 }
 
 .locationHighlight {
-    font-style: italic;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
 
-/* identical to box height */
-display: flex;
-align-items: center;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
 
-color: #0000FF;
+  color: #0000ff;
 }
 
-.profileDescription{
-    font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
+.profileDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
 
-/* or 125% */
-display: flex;
-align-items: center;
+  /* or 125% */
+  display: flex;
+  align-items: center;
 
-color: #191919;}
-
-.smedia{
-    font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
-display: flex;
-align-items: center;
-
-color: #0000FF;
+  color: #191919;
 }
 
-#ProfileElijah{
-    background: url(../../Assets/MobilizersPhotos/ElijahMckenzie.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    /* width: 79px; */
-    width: 130px;
-    height: 77.45px;
-    border-radius: 50%;
-    margin: 19px;
-    }
+.smedia {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+
+  color: #0000ff;
+}
+
+#ProfileElijah {
+  background: url(../../Assets/MobilizersPhotos/ElijahMckenzie.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
+}
 #ProfileJulieta {
-    background: url(../../Assets/MobilizersPhotos/Julieta_Profile\ Picture.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    /* width: 79px; */
-    width: 130px;
-    height: 77.45px;
-    border-radius: 50%;
-    margin: 19px;
+  background: url(../../Assets/MobilizersPhotos/Julieta_Profile\ Picture.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 #ProfileJessica {
-    background: url(../../Assets/MobilizersPhotos/Jessica\ Klezcka.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    /* width: 79px; */
-    width: 130px;
-    height: 77.45px;
-    border-radius: 50%;
-    margin: 19px;
+  background: url(../../Assets/MobilizersPhotos/Jessica\ Klezcka.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 #ProfileJuan {
-    background: url(../../Assets/MobilizersPhotos/Juan\ Sierra.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 130px;    height: 79px;
-    border-radius: 50%;
-    margin: 19px;
+  background: url(../../Assets/MobilizersPhotos/Juan\ Sierra.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 10px;
 }
 
+@media screen and (max-width: 300px) {
+  #ProfileElijah,
+  #ProfileJulieta,
+  #ProfileJessica,
+  #ProfileJuan {
+    min-width: 50px;
+    height: 50px;
+  }
+}
 
 #PlayJulieta {
-    width: 326.16px;
-    height: 151.37px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(../../Assets/MobilizersPhotos/Julieta\ Martinez.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    background-position: 20% 60%;
-    margin-top: 22px;
+  width: 326.16px;
+  height: 151.37px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.31),
+      rgba(0, 0, 0, 0.31),
+      rgba(0, 0, 0, 0.31)
+    ),
+    url(../../Assets/MobilizersPhotos/Julieta\ Martinez.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-position: 20% 60%;
+  margin-top: 22px;
 }
 
 .tb {
-    width: 100%;
-    margin-top: 21px;
+  width: 100%;
+  margin-top: 21px;
 }
 
 .cmp {
-    height: 46px;
-    background: #0000FF;
-    border-radius: 20px 0px 0px 20px;
-    border: none;
-    font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 22px;
+  height: 46px;
+  background: #0000ff;
+  border-radius: 20px 0px 0px 20px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 
-align-items: center;
+  align-items: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .vic {
-    height: 46px;
-background: #8585FF;
-border-radius: 0px 20px 20px 0px;
-border: none;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 22px;
+  height: 46px;
+  background: #8585ff;
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 
-/* or 157% */
-align-items: center;
+  /* or 157% */
+  align-items: center;
 
-color: #FFFFFF;
-    
+  color: #ffffff;
 }
 
 .ladesc {
-    width: 324px;
-height: 201px;
+  width: 324px;
+  height: 201px;
 
-background: #0000FF;
-border-radius: 30px;
-margin-top: 20px;
-margin-bottom: 20px;
+  background: #0000ff;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .wt {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .ladesc b {
-    font-style: italic;
-font-weight: 500;
-font-size: 17px;
-line-height: 20px;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 
 .ladesc p {
-    font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 22px;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-top: 15px;
-
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 15px;
 }
 
 .ladesc button {
-    font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
 
-/* or 143% */
-align-items: center;
-text-align: center;
+  /* or 143% */
+  align-items: center;
+  text-align: center;
 
-color: #0000FF;
-border: none;
-width: 163px;
-height: 46px;
-background: #FFFFFF;
-border-radius: 30px;
+  color: #0000ff;
+  border: none;
+  width: 163px;
+  height: 46px;
+  background: #ffffff;
+  border-radius: 30px;
 }
 
 .cause h5 {
-    color: #0000FF;
+  color: #0000ff;
 }
 
 .causebtn {
-    margin-top: 22px;
-    background: #0000FF;
-    border-radius: 30px;
-    color: #FFFFFF;
-    border: none;
-    height: 30px;
+  margin-top: 22px;
+  background: #0000ff;
+  border-radius: 30px;
+  color: #ffffff;
+  border: none;
+  height: 30px;
 }
 .speakerIcon {
-    width: 12.67px;
-    height: 12.55px;
-    margin-right: 6px;
+  width: 12.67px;
+  height: 12.55px;
+  margin-right: 6px;
 }
 
 .whitesmthn {
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 .causebtn.last {
-    margin-top: 15px;    
+  margin-top: 15px;
 }
 
 .TopCampaigns {
-    height: 100vh;
-    background-color:rgba(0, 0, 255, 0.96);
-    /* -webkit-transition: all 0.5s 0s ease;
+  height: 100vh;
+  background-color: rgba(0, 0, 255, 0.96);
+  /* -webkit-transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     -o-transition: all 0.5s 0s ease;
     transition: all 0.5s 0s ease; */
 }
 
-
 .Victories {
-    height: 100vh;
-    background: rgba(133, 133, 255, 0.96);
+  height: 100vh;
+  background: rgba(133, 133, 255, 0.96);
 }
 
-
 .cmp-title {
-    font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 
-/* or 157% */
-display: flex;
-align-items: center;
+  /* or 157% */
+  display: flex;
+  align-items: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .cmp-subtitle {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    
-    /* or 157% */
-    display: flex;
-    align-items: center;
-    
-    color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+  /* or 157% */
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
 }
 
 .cmp-t {
-    font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 22px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
 
-/* or 157% */
-display: flex;
-align-items: center;
+  /* or 157% */
+  display: flex;
+  align-items: center;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 .cmp-p {
-    font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 
-/* or 114% */
-display: flex;
-align-items: center;
-text-align: justify;
+  /* or 114% */
+  display: flex;
+  align-items: center;
+  text-align: justify;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 .ccmp {
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 22px;
 
-/* or 88% */
-display: flex;
-align-items: center;
+  /* or 88% */
+  display: flex;
+  align-items: center;
 
-color: #FFFFFF;
-margin-bottom: 37px;
+  color: #ffffff;
+  margin-bottom: 37px;
 }
 
-
-
 .closebtn {
-    color: #FFFFFF;
-    border: none;
-    background: transparent;
-    font-style: normal;
-font-weight: 300;
-font-size: 30px;
-line-height: 37px;
+  color: #ffffff;
+  border: none;
+  background: transparent;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 37px;
 }
