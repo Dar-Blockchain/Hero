@@ -83,4 +83,15 @@
     margin-top: 37px;
   }
 
-  
+  .ccmp {
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 22px;
+
+/* or 88% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+  }
