@@ -58,7 +58,7 @@ const Supporter = () => {
       {Dropdown === "off" && 
             <div className="heroo container-fluid d-flex flex-column justify-content-center align-items-center">
             <Link to="/"><img src={logo} alt="Hero Logo Blue" srcSet={logo} className='blueLogo' /></Link>
-            <div className='Card d-flex justify-content-center align-items-center browse-p'><p>Browse the first HERO Mobilizers with a verified track record on climate action.</p></div>
+            <div className='Card d-flex justify-content-center align-items-center browse-p'><p>Click on the first HERO Mobilizers to see their profiles and work.</p></div>
             <button className='ds-h' onClick={handleDropdown}>Discover how HERO Mobilizers are verified</button>
             <ProfilesList/>
             </div>
