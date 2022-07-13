@@ -3,3 +3,6 @@
   src: local('Seravek'), url(./Assets/Fonts/Seravek/Seravek.ttf) format('ttf');
 }
 
+body{
+  font-family: 'Seravek'!important;
+}
