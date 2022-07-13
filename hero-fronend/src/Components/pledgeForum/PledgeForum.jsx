@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import axios from 'axios'
+import Toastbox, { toast } from "react-toastbox";
 
 const PledgeForum = () => {
   const [forum, setForum] = useState(0);
@@ -68,6 +69,25 @@ const PledgeForum = () => {
 
 
 
+      const chooseAmount = (amount, e) => {
+        setInput({
+          ...inputState,
+          ["MonthlySubs"]: amount
+      })
+      }
+
+      const validateAction = (e, form) => {
+        e.preventDefault();
+        if(form === 1){
+          if (!inputState.MonthlySubs) {
+            toast.error("You should enter an amount");
+            return;
+          }
+          setForum(1)
+        }
+
+      }
+ 
 
   return (
     <div className='pledgeForum container d-flex flex-column px-4 py-5 justify-content-center'>
@@ -77,11 +97,15 @@ const PledgeForum = () => {
       (<div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
-        What monthly subscription amount are you willing to pledge to this mobilizer?
+        What monthly subscription amount<br/> are you willing to pledge to this mobilizer ?
         </p>
-        <input name='MonthlySubs' onChange={handleChange} className="inputcash" type="number" placeholder="€ 20"/>
-        <button onClick={() => setForum(1)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
-        <p className="p-end">We will let you know as soon as HERO is officially launched. You will then be part of the first HERO Supporters  in the world.</p>
+        <p className="p-end">100% of the funds go directly to the mobilizers.</p>
+
+        <button name='MonthlySubs' onClick={() => chooseAmount(10)} className="btn-c-m">€ 10</button>
+      <button name='MonthlySubs' onClick={() => chooseAmount(20)} className="btn-c-m my-4">€ 20</button>
+      <button name='MonthlySubs' onClick={() => chooseAmount(50)} className="btn-c-m">€ 50</button>
+        <input name='MonthlySubs' onChange={handleChange} className="inputcash" type="number" placeholder="Other amount"/>
+        <button onClick={(e) => validateAction(e, 1)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
 
       </div>
       )} 
@@ -150,7 +174,7 @@ const PledgeForum = () => {
       {forum === 4 && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
-        <h6 className="wtc">Welcome to the future of climate action!</h6>
+        <h6 className="wtc">Welcome to the future<br/> of climate action!</h6>
       </div>
     }
 
