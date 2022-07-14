@@ -96,6 +96,13 @@ const Profile = () => {
                   <img className="align-self-center" src={play} />
                 </div>
               ) : ("")}
+              {profile.video && (
+                <div className="d-flex align-items-center justify-content-center w-100 mt-4" id={"Play" + profile.id}>
+                  <video id="background-video" controls={true} playsInline>
+                    <source src={"assets/videos/"+profile.video} type="video/mp4" />
+                  </video>
+                </div>
+              )}
 
               <div className="tb row">
                 <button onClick={campHandler} className="col-6 cmp"><img src={speakerIcon} className="speakerIcon" /> Campaigns</button>

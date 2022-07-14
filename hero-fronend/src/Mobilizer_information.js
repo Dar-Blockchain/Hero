@@ -147,6 +147,7 @@ export const MobilizerData = [
         phone: "57 (300) 7189525",
         sm: "IG: @juansierra99, @juanpasierra11",
         mainMovements: "Pacto X El Clima Colombia Fridays For Future Bogotá United for Climate Action",
+        video: "juanVideo.mp4",
         Victories: [
             {
                 title: "Youth",
