@@ -146,3 +146,31 @@ color: #FFFFFF;
     transform: translate(-50%, -50%);
     width: 100%;
 }
+
+.input-group-text{
+    background: transparent;
+    border: unset;
+    border-bottom: 1px solid white;
+    border-radius: unset;
+    color: white;
+}
+
+.custom-input{
+    background: transparent;
+    border-top: unset;
+    border-right: unset;
+    border-left: unset;
+    border-bottom: 1px white solid;
+}
+.input-group{
+    width: unset!important;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: transparent;
+    border: unset;
+    border-bottom: 1px solid white;
+    outline: 0;
+    box-shadow: 0 0 0 .25remrgba(13,110,253,.25);
+}
