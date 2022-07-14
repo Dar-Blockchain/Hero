@@ -107,7 +107,7 @@ export const MobilizerData = [
             desc: "Dismantling the way we think about climate change. Spoke about the public's perception of the climate crisis and what factors influence how people think and talk about it."
         },            
         {
-            title: "Interviewed by astivists",
+            title: "Interviewed by activists",
             campaign: "Stop Cambo oil field interview series",
             status: "Completed",
             desc: "Spoke to Ya'ara Peretz about energy security, new models of extraction, and how the proposed EastMed pipeline is fueling geopolitical conflicts."
