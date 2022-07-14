@@ -55,10 +55,10 @@ const PledgeForum = () => {
         inputState
         ).then(res => {
           console.log(res.data)
-          setForum(4)
+          setForum(3)
         }).catch(err => {
           console.log(err)
-          setForum(2)}) 
+          setForum(1)}) 
       }
 
       const handleClose = (e) => {
@@ -86,20 +86,13 @@ const PledgeForum = () => {
           setForum(1)
         }
         if(form === 2){
-          if(!inputState.climatesChanges.length){
+          if(!inputState.ExitesYouHero.length){
             setError(true)
             return;
           }
           setForum(2)
         }
         if(form === 3){
-          if(!inputState.ExitesYouHero.length){
-            setError(true)
-            return;
-          }
-          setForum(3)
-        }
-        if(form === 4){
           if(!inputState.Birth_date || !inputState.City || !inputState.Email || !inputState.Full_Name){
             setError(true);
             return;
@@ -141,7 +134,7 @@ const PledgeForum = () => {
       )} 
 
 
-    {forum === 1 && !error && 
+    {/*forum === 1 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
       <img id='logo' src={logo} srcSet={logo} alt="logo" />
       <p className="p-headline">
@@ -153,9 +146,9 @@ const PledgeForum = () => {
 
       <button onClick={(e) => validateAction(e, 2)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
     </div>
-    }
+      */}
 
-    {forum === 2 && !error && 
+    {forum === 1 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
@@ -165,7 +158,7 @@ const PledgeForum = () => {
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m my-4">Getting direct feedback on the actions of the mobilizer</button>
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
 
-        <button onClick={(e) => validateAction(e, 3)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
+        <button onClick={(e) => validateAction(e, 2)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
       </div>
 
         }
@@ -174,7 +167,7 @@ const PledgeForum = () => {
 
 {/* Contact */}
 
-        {forum === 3 && !error && 
+        {forum === 2 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <form className="d-flex flex-column align-self-center align-items-center justify-content-center">        
@@ -195,13 +188,13 @@ const PledgeForum = () => {
           <input type="text" name='City' onChange={handleChange} placeholder="Your City" />
         </label>
       </form>
-      <button onClick={(e) => validateAction(e, 4)}  className="btn-c-m w my-4">Become a HERO Supporter</button>
+      <button onClick={(e) => validateAction(e, 3)}  className="btn-c-m w my-4">Become a HERO Supporter</button>
 
       </div>
       }
 
       
-      {forum === 4 && !error && 
+      {forum === 3 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center center-position"> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <h6 className="wtc">Welcome to the future<br/> of climate action!</h6>
