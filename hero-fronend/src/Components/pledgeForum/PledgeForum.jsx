@@ -9,6 +9,7 @@ import axios from 'axios'
 
 const PledgeForum = () => {
   const [forum, setForum] = useState(0);
+  const [error, setError] = useState(false)
   const locations = useLocation();
 
   const [inputState, setInput] = useState({
@@ -79,11 +80,37 @@ const PledgeForum = () => {
         e.preventDefault();
         if(form === 1){
           if (!inputState.MonthlySubs) {
+            setError(true)
             return;
           }
           setForum(1)
         }
+        if(form === 2){
+          if(!inputState.climatesChanges.length){
+            setError(true)
+            return;
+          }
+          setForum(2)
+        }
+        if(form === 3){
+          if(!inputState.ExitesYouHero.length){
+            setError(true)
+            return;
+          }
+          setForum(3)
+        }
+        if(form === 4){
+          if(!inputState.Birth_date || !inputState.City || !inputState.Email || !inputState.Full_Name){
+            setError(true);
+            return;
+          }
+          handleRequest();
+        }
 
+      }
+
+      const backToForm = () => {
+        setError(false)
       }
  
 
@@ -96,7 +123,7 @@ const PledgeForum = () => {
       </button>
       
       
-      {forum === 0 &&  
+      {forum === 0 && !error && 
       (<div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
@@ -114,7 +141,7 @@ const PledgeForum = () => {
       )} 
 
 
-    {forum === 1 && 
+    {forum === 1 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
       <img id='logo' src={logo} srcSet={logo} alt="logo" />
       <p className="p-headline">
@@ -124,11 +151,11 @@ const PledgeForum = () => {
       <button name='climatesChanges' onClick={handleClick} className="btn-c-m my-4">Severe weather/natural disasters</button>
       <button name='climatesChanges' onClick={handleClick} className="btn-c-m l">Social unrest (due to worsened economic conditions, food scarcity, etc.)</button>
 
-      <button onClick={() => setForum(2)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
+      <button onClick={(e) => validateAction(e, 2)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
     </div>
     }
 
-    {forum === 2 &&
+    {forum === 2 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
@@ -138,7 +165,7 @@ const PledgeForum = () => {
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m my-4">Getting direct feedback on the actions of the mobilizer</button>
         <button onClick={handleClick} name="ExitesYouHero" className="btn-c-m l">Access exclusive rewards and experiences from sustainable brands and partners</button>
 
-        <button onClick={() => setForum(3)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
+        <button onClick={(e) => validateAction(e, 3)} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
       </div>
 
         }
@@ -147,7 +174,7 @@ const PledgeForum = () => {
 
 {/* Contact */}
 
-        {forum === 3 &&
+        {forum === 3 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <form className="d-flex flex-column align-self-center align-items-center justify-content-center">        
@@ -168,16 +195,26 @@ const PledgeForum = () => {
           <input type="text" name='City' onChange={handleChange} placeholder="Your City" />
         </label>
       </form>
-      <button onClick={handleRequest}  className="btn-c-m w my-4">Become a HERO Supporter</button>
+      <button onClick={(e) => validateAction(e, 4)}  className="btn-c-m w my-4">Become a HERO Supporter</button>
 
       </div>
       }
 
       
-      {forum === 4 && 
+      {forum === 4 && !error && 
       <div className="d-flex flex-column justify-content-center align-items-center center-position"> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <h6 className="wtc">Welcome to the future<br/> of climate action!</h6>
+      </div>
+    }
+          {error && 
+      <div className="d-flex flex-column justify-content-center align-items-center center-position"> 
+        <img id='logo' src={logo} srcSet={logo} alt="logo" />
+        <h6 className="wtc">Something went wrong :( <br/>
+                      Please make sure the required <br/>
+                          fields are completed. 
+        </h6>
+        <button onClick={backToForm} className="btn btn-transparent mt-4"><img src={play} srcSet={play} alt="submit" /></button>
       </div>
     }
 
