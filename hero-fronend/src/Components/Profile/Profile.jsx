@@ -85,9 +85,12 @@ const Profile = () => {
               <div className="hero-card w-100 d-flex align-items-center">
                 <span id={"Profile" + profile.id}></span>
                 <div className='d-flex flex-column mb-0'>
-                  <span className="d-flex "><h5 className='profileName mb-0'>{profile.name}</h5> <img className='dot' src={dot} /></span>
+                  <span className="d-flex ">
+                    <h5 className='profileName mb-0'>{profile.name}</h5> 
+                    <img className='dot' src={dot} />
+                  </span>
                   <p className='locationHighlight mb-0'>{profile.LocationHighlight}</p>
-                  <p className='profileDescription mb-0'>{profile.profileDescription}</p>
+                  <p className='profileDescription mb-0 col-11'>{profile.profileDescription}</p>
                   <p className="smedia">{profile.sm}</p>
                 </div>
               </div>

@@ -13,19 +13,32 @@ export const MobilizerData = [
         mainMovements: "Fridays for Future UK",
         TopCampaigns:
         [
-            {title: "No more fast fashion:\
-        campaigning to boycott brands with fast fashion business models, characterised by quick item turnover,\
-        low prices, exploitative working conditions for clothes manufacturers and an extremely high environmental footprint."} ,
-        {       title: "Fossil fuel phaseout: \Campaigning to stop Cambo and Jackdaw fossil fuel projects in the UK.\
-            Mobilising around the Fossil Fuel Non-Proliferation Treaty."
+            {title: "No more fast fashion",
+            campaign: "Fridays for Future UK",
+            status: "In progress",
+            desc: "campaigning to boycott brands with fast fashion business models, characterised by quick item turnover,\
+            low prices, exploitative working conditions for clothes manufacturers and an extremely high environmental footprint."
+        } ,
+        { 
+            title: "Fossil fuel phaseout",
+            campaign: "Independent Mobilizer",
+            desc: "Campaigning to stop Cambo and Jackdaw fossil fuel projects in the UK.\
+                    Mobilising around the Fossil Fuel Non-Proliferation Treaty.",
+            campaing: "Fridays for Future UK",
+            status: "In progress",
         },
-        { title: "Official ambassador for UN Together Band Official for Goals 13 and 14 on Climate Action and Life Below Water. UN Together Band Official is a global movement aiming to\
-        build a worldwide community of 1 billion citizens to achieve the 17 UN Sustainable Development Goals."}
+        { title: "Official ambassador UN Together Band Official",
+            campaign: "Goals 13 and 14 on Climate Action and Life Below Water",
+            desc: "UN Together Band Official is a global movement aiming to\
+            build a worldwide community of 1 billion citizens to achieve the 17 UN Sustainable Development Goals.",
+            status: "In progress",
+
+        }
     ],
 
 
     Victories: [
-        {title: "Has spoken at the UK Parliament",  campaign:"the House of Lords", status: "Completed" , desc: ", the EU Parliament, outside the G7 Conference, and in the Amazon rainforest about the climate crisis."},
+        {title: "Has spoken at the UK Parliament",  campaign:"the House of Lords", status: "Completed" , desc: "The EU Parliament, outside the G7 Conference, and in the Amazon rainforest about the climate crisis."},
         {title:"Interviewed for The Nature of Change",campaign: "The Nature of Change" , status: "Completed" ,desc: "an exclusive book and fundraising campaign featuring 15 youth climate activists from 11 countries. All profits go to climate crisis charities."},
         {title:"Featured in GQ Turkey Magazine", campaign: "Earth and sustainability edition", status: "Completed" , desc: "Featured in GQ Turkey Magazine's Earth and sustainability edition featuring oil spill and plastic pollution 2019 visual art."}
     ],
@@ -150,20 +163,20 @@ export const MobilizerData = [
         video: "juanVideo.mp4",
         Victories: [
             {
-                title: "Youth",
+                title: "Pacto X El Clima Colombia",
                 campaing: "Climate Adaptation Conference",
                 status: "Completed",
                 desc: "Guest speaker at the Youth for Climate Adaptation Conference. Speech focused on the importance of climate adaptation, not only mitigation, with a focus on vulnerable communities in order to build a just and resilient world."
             },
 
-            {title: "Fridays For Future",
+            {title: "Fridays For Future Bogotá",
              campaign:"Future Bogotá",
              status: "Completed",
              desc: "Widespread media coverage with Fridays for Future Bogotá across TV, newspaper and radio channels in Colombia raising awareness on a variety of climate issues."
             },
              {
                 title: "United for Climate Action",
-                campaign:"26",
+                campaign:"COP 26",
                 status: "Completed",
                 desc: "Represented Colombian and Latin American civil society voices at COP 26. Spoke to the President of Colombia about the country's shortcomings regarding climate action and the environmental leaders that continue to be persecuted for their work."}
             ],

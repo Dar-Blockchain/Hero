@@ -1,83 +1,20 @@
-.cmp-title {
-    margin-bottom: -22px;
-}
-
-.cmp-t {
-    margin-bottom: 11px;
-}
-
-
-.cmp-title {
-  height: 18px;
-  font-family: 'Seravek';
-  font-style: normal;
-  font-weight: bolder;
-  font-size: 14px;
-  line-height: 22px;
-  
-  /* or 157% */
-  display: flex;
-  align-items: center;
-  
-  color: #FFFFFF;
-      
-  }
-  
-  .cmp-subtitle {
-    font-family: 'Seravek';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    /* or 157% */
-
-    color: #FFFFFF;
-  }
-  
-  .cmp-t {
-    font-family: 'Seravek';
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 14px;
-    line-height: 22px;
-    
-    /* or 157% */
-    display: flex;
-    align-items: center;
-    
-    color: #FFFFFF;
-
-  }
-  
-  .cmp-p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: justify;
-    
-    color: #FFFFFF;
-  }
-
-
-  .icon-p {
-    margin-right: -26px;
-  }
-
-  .cmpcard {
+.TopCampaigns {
+  min-height: 100vh;
+  background-color: rgba(0, 0, 255, 0.96);
+  /* -webkit-transition: all 0.5s 0s ease;
+    -moz-transition: all 0.5s 0s ease;
+    -o-transition: all 0.5s 0s ease;
+    transition: all 0.5s 0s ease; */
+    padding-top: 42px;
+    padding-right: 34px;
     padding-left: 40px;
-    padding-right: 42px;
-  }
+    padding-bottom: 133px;
+}
 
-  #cmpcard1 {
-    margin-top: 22px;
-    margin-bottom: 23px;
-  }
 
-  #cmpcard0 {
-    margin-top: 37px;
-  }
+.title {
 
-  .ccmp {
+font-family: 'Seravek';
 font-style: normal;
 font-weight: 700;
 font-size: 25px;
@@ -88,15 +25,75 @@ display: flex;
 align-items: center;
 
 color: #FFFFFF;
-  }
+margin-bottom: 27px;
+}
 
-  .closebtn {
-    margin-left: 25px;
-    margin-right: 32px;
-    margin-top: 42px;
-    margin-bottom: 48px;
-  }
 
-  .headlinee {
-    margin-bottom: -12px;
-  }
+
+.campaing-title {
+
+font-family: 'Seravek';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+
+/* or 157% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.closebtn {
+  margin-bottom: 48px;
+}
+.campaing-subtitle {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+
+/* or 157% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+
+
+.campaing-status {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+
+/* or 157% */
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.campaing-desc {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+/* or 114% */
+display: flex;
+align-items: center;
+text-align: justify;
+
+color: #FFFFFF;
+}
+
+
+.icon-person, .icon-leaf {
+  margin-right: 26px;
+}

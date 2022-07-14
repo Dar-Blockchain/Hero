@@ -1,0 +1,100 @@
+.Victories {
+    min-height: 100vh;
+    background: rgba(133, 133, 255, 0.96);
+    /* -webkit-transition: all 0.5s 0s ease;
+      -moz-transition: all 0.5s 0s ease;
+      -o-transition: all 0.5s 0s ease;
+      transition: all 0.5s 0s ease; */
+      padding-top: 42px;
+      padding-right: 34px;
+      padding-left: 40px;
+      padding-bottom: 133px;
+  }
+  
+  
+  .title {
+  
+  font-family: 'Seravek';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 22px;
+  
+  /* or 88% */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  margin-bottom: 27px;
+  }
+  
+  
+  
+  .campaing-title {
+  
+  font-family: 'Seravek';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  
+  /* or 157% */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  .closebtn {
+    margin-bottom: 48px;
+  }
+  .campaing-subtitle {
+    font-family: 'Seravek';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  
+  /* or 157% */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  
+  .campaing-status {
+    font-family: 'Seravek';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  
+  /* or 157% */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+  }
+  
+  .campaing-desc {
+    font-family: 'Seravek';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  
+  /* or 114% */
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  
+  color: #FFFFFF;
+  }
+  
+  
+  .icon-person, .icon-leaf {
+    margin-right: 26px;
+  }
+  
