@@ -127,7 +127,13 @@ const PledgeForum = () => {
         <button name='MonthlySubs' onClick={() => chooseAmount(10)} className="btn-c-m">€ 10</button>
       <button name='MonthlySubs' onClick={() => chooseAmount(20)} className="btn-c-m my-4">€ 20</button>
       <button name='MonthlySubs' onClick={() => chooseAmount(50)} className="btn-c-m">€ 50</button>
-        <input name='MonthlySubs' onChange={handleChange} className="inputcash" type="number" placeholder="Other amount"/>
+        {/*<input name='MonthlySubs' onChange={handleChange} className="inputcash" type="number" placeholder="Other amount"/>*/}
+        <div class="input-group mt-4 mb-4">
+          <input name='MonthlySubs' onChange={handleChange} type="number" placeholder="Other amount" className="form-control custom-input" aria-label="Amount (to the nearest dollar)"/>
+          <div className="input-group-append">
+            <span className="input-group-text">€</span>
+          </div>
+        </div>
         <button onClick={(e) => validateAction(e, 1)} className="btn btn-transparent"><img src={play} srcSet={play} alt="submit" /></button>
 
       </div>
