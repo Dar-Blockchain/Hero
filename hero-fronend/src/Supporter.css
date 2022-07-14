@@ -20,6 +20,7 @@
     height: 97px;
     background: #FFFFFF;
     border-radius: 20px;
+
     
 }
 
@@ -29,7 +30,6 @@
 }
 
 .Card p {
-
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -40,6 +40,7 @@
     text-align: center;
     color: #0000FF;
     padding: 19px 18px 14px 19px;
+    margin-bottom: 0px;
 }
 
 
@@ -110,17 +111,17 @@ height: 10.33px;
 }
 
 .descc {
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-/* or 143% */
-display: flex;
-align-items: center;
-text-align: justify;
-color: #FFFFFF;
-max-width: 263px;
-margin-top: 50px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    color: #FFFFFF;
+    max-width: 263px;
+    margin-top: 50px;
 }
 
 

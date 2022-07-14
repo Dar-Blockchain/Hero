@@ -1,5 +1,5 @@
 .cmp-title {
-    margin-bottom: 2px;
+    margin-bottom: -22px;
 }
 
 .cmp-t {
@@ -8,18 +8,19 @@
 
 
 .cmp-title {
-    font-family: 'Seravek';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 22px;
-    
-    /* or 157% */
-    display: flex;
-    align-items: center;
-    
-    color: #FFFFFF;
-    
+  height: 18px;
+  font-family: 'Seravek';
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 22px;
+  
+  /* or 157% */
+  display: flex;
+  align-items: center;
+  
+  color: #FFFFFF;
+      
   }
   
   .cmp-subtitle {
@@ -27,19 +28,15 @@
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 22px;
-    
     /* or 157% */
-    display: flex;
-    align-items: center;
-    
+
     color: #FFFFFF;
   }
   
   .cmp-t {
     font-family: 'Seravek';
     font-style: normal;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 14px;
     line-height: 22px;
     
@@ -48,6 +45,7 @@
     align-items: center;
     
     color: #FFFFFF;
+
   }
   
   .cmp-p {
@@ -55,10 +53,6 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
-    
-    /* or 114% */
-    display: flex;
-    align-items: center;
     text-align: justify;
     
     color: #FFFFFF;
@@ -94,4 +88,15 @@ display: flex;
 align-items: center;
 
 color: #FFFFFF;
+  }
+
+  .closebtn {
+    margin-left: 25px;
+    margin-right: 32px;
+    margin-top: 42px;
+    margin-bottom: 48px;
+  }
+
+  .headlinee {
+    margin-bottom: -12px;
   }

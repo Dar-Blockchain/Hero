@@ -1,8 +1,54 @@
 @font-face {
   font-family: 'Seravek';
   src: local('Seravek'), url(./Assets/Fonts/Seravek.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
 }
+
+
+@font-face {
+  font-family: 'Seravek';
+  src: local('Seravek'), url(./Assets/Fonts/Seravek.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Seravek';
+  src: local('Seravek'), url(./Assets/Fonts/Seravek.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Seravek';
+  src: local('Seravek'), url(./Assets/Fonts/Seravek-Medium.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: 'Seravek';
+  src: local('Seravek'), url(./Assets/Fonts/Seravek-Bold.ttf) format('truetype');
+  font-style: bold;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Seravek';
+  src: local('Seravek'), url(./Assets/Fonts/Seravek-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
 
 body{
   font-family: 'Seravek'!important;
 }
+
+
+
+
+
+

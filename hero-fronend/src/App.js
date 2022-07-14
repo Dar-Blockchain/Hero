@@ -41,7 +41,7 @@ function App() {
     <div className="App container-sm d-flex flex-column align-items-center">
       {pageState === "first" &&
 
-        <div className="d-flex flex-column justify-content-center align-items-center">
+        <div className="d-flex my-auto  flex-column justify-content-center align-items-center">
           <img src={whiteLogo} className="logo" />
           <img src={fHero} id="fHero" />
           <small className="f-t">
@@ -51,17 +51,17 @@ function App() {
           <p className="hero-headline">Do you want to do more<br/> for the climate but just don’t know how?</p>
           <button name="second" onClick={nextPage} className="btn-hero">Click here to test the HERO app</button>
           <p className="hero-f-p">
-            Stanford Social Innovation Review estimates that funding climate mobilizers can be <b>100x</b> more efficient on reducing carbon emissions than buying carbon credits.
+            Stanford Social Innovation Review estimates that funding climate mobilizers can be <b id='b'>100x</b> more efficient on reducing carbon emissions than buying carbon credits.
           </p>
         </div>
       }
 
 
       {pageState === "second" &&
-        <div className="d-flex flex-column justify-content-center align-items-center">
+        <div className="d-flex my-auto  flex-column justify-content-center align-items-center">
           <img src={blueLogo} className="logo" />
           <img src={sHero} className="sHero" />
-          <small className="s-t">
+          <small className="s-t text-center mt-2">
             Jessica Kleczka<br />
             HERO Mobilizer / UK
           </small>
@@ -74,7 +74,7 @@ function App() {
             <li>
               <img src={bluePoly} />
               <p>
-              They shift
+              They shift<br/>
               public narratives. 
               </p>
             </li>
@@ -84,9 +84,9 @@ function App() {
               They directly address climate<br/> policy with decision makers.
               </p>
             </li>
-            <li>
+            <li className="mb-0">
               <img src={bluePoly} />
-              <p>
+              <p className="mb-0">
               This is one of the most<br/>
               important jobs of our time<br/>
               and it’s not being paid.
@@ -94,14 +94,14 @@ function App() {
             </li>
           </ul>
 
-          <button name="last" id='nextBtn' onClick={nextPage}>
+          <button name="last" id='nextBtn' className='mb-2' onClick={nextPage}>
             <img name="last" src={nextBtn} />
           </button>
 
         </div>
       }
       {pageState === "last" &&
-                  <div className="d-flex flex-column justify-content-center align-items-center">
+                  <div className="d-flex my-auto  flex-column justify-content-center align-items-center">
                       <img src={whiteLogo} className="logo" />
                       <p className='hero-headline-last'>
                       The first crowdfunding platform<br/> providing a Basic Income for<br/> climate mobilizers with the most<br /> impact on policy today.

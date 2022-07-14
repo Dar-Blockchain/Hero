@@ -25,7 +25,7 @@ const Supporter = () => {
     <div className="container-fluid">
 
    
-    <div className='Supporter d-flex flex-column align-items-center pt-5'>
+    <div className='Supporter my-auto d-flex flex-column align-items-center pt-5'>
       {Dropdown === "on" && 
             <div className='hero-dropdown container-fluid d-flex flex-column justify-content-center align-items-center'>
               <button onClick={closeDropdown} className="closebtn align-self-end" >

@@ -18,14 +18,14 @@ const Campaigns = ({profileCmp}) => {
           <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
         </svg>
       </button>
-          <h5 className="ccmp text-white align-self-center">Current Campaigns</h5>
+          <h4 className="ccmp text-white align-self-center">Current Campaigns</h4>
           <div className='d-flex flex-column justify-content-center align-items-center' >
           {profileCmp && 
             profileCmp.map((value, index) =>
               <>
 
                <div key={index} className='d-flex flex-column justify-content-center cmpcard' id={"cmpcard" + index}>
-                <span className="d-flex">
+                <span className="d-flex headlinee">
                   {
                     index === 2 ? (<img src={leaf} className="col-1 icon-p" />):(<img src={personn} className="col-1 icon-p" />)
                   }

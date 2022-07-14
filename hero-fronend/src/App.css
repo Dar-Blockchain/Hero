@@ -1,3 +1,4 @@
+
 .App 
 {
   font-family: 'Seravek';
@@ -12,6 +13,7 @@
 
 .logo {
   width: 153.75px;height: 35.49px;
+  margin-bottom: 20px;
 }
 
 .btn-hero {
@@ -62,32 +64,32 @@ small.s-t {
 }
 
 .hero-f-p {
+  width: 307px;
   font-family: 'Seravek';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 20px;
-
-/* or 133% */
-
-text-align: center;
-
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;  
+  color: #FFFFFF;
+  text-align: center;
 }
 
 .hero-headline {
+
+  width: 305px;
+  height: 85px;
   font-family: 'Seravek';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 28px;
-
-/* or 112% */
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  
+  /* or 112% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #FFFFFF;
 margin-bottom: 18px;
 }
 
@@ -121,17 +123,22 @@ margin-bottom: 12.57px;
 }
 
 .hero-t-headline {
+
+
+  height: 86px;
+
+  font-family: 'Seravek';
   font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 28px;
-
-/* or 112% */
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #0000FF;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 28px;
+  
+  /* or 112% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  color: #0000FF;
 }
 
 
@@ -156,4 +163,25 @@ color: #FFFFFF;
 #nextBtn {
   background: transparent;
   border: none;
+}
+
+#b {
+  font-weight: 700;
+  font-style: bold;
+}
+
+ul li p {
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+
+/* or 138% */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #191919;
+
 }

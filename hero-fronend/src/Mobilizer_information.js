@@ -156,13 +156,13 @@ export const MobilizerData = [
                 desc: "Guest speaker at the Youth for Climate Adaptation Conference. Speech focused on the importance of climate adaptation, not only mitigation, with a focus on vulnerable communities in order to build a just and resilient world."
             },
 
-            {title: "Friday's",
+            {title: "Fridays For Future",
              campaign:"Future Bogotá",
              status: "Completed",
              desc: "Widespread media coverage with Fridays for Future Bogotá across TV, newspaper and radio channels in Colombia raising awareness on a variety of climate issues."
             },
              {
-                title: "COP",
+                title: "United for Climate Action",
                 campaign:"26",
                 status: "Completed",
                 desc: "Represented Colombian and Latin American civil society voices at COP 26. Spoke to the President of Colombia about the country's shortcomings regarding climate action and the environmental leaders that continue to be persecuted for their work."}
