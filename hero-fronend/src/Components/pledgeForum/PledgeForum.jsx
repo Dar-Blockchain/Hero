@@ -175,7 +175,7 @@ const PledgeForum = () => {
 
       
       {forum === 4 && 
-      <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
+      <div className="d-flex flex-column justify-content-center align-items-center center-position"> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <h6 className="wtc">Welcome to the future<br/> of climate action!</h6>
       </div>
