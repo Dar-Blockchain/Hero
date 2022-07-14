@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Seravek';
-  src: local('Seravek'), url(./Assets/Fonts/Seravek/Seravek.ttf) format('truetype');
+  src: local('Seravek'), url(./Assets/Fonts/Seravek.ttf) format('truetype');
 }
 
 body{
