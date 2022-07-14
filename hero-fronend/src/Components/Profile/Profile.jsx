@@ -112,9 +112,9 @@ const Profile = () => {
                 <button onClick={vcdHandler} className="col-6 vic"><img src={whitesmthn} className="whitesmthn" />Victories</button>
               </div>
               <div className="ladesc w-100 d-flex flex-column align-items-center justify-content-center">
-                <b>Launch is one month away!</b>
-                <p>Take action on climate change by pledging to fund your favourite mobilizer upon launch.</p>
-                <Link to={"/forum"} state={ {from: profile.name} }><button >Click here to join HERO</button></Link>
+               
+                <p> <b>Launch is one month away!</b> <br/>Join the waiting list to become one of the first HERO Supporters in the world.</p>
+                <Link  className="join-hero-btn" to={"/forum"} state={ {from: profile.name} }><button>Click here to join HERO</button></Link>
               </div>
               <div className="d-flex flex-column cause justify-content-center align-items-center">
                 <h5 className="mx-auto wt">Works on same causes as</h5>

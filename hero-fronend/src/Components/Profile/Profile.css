@@ -286,3 +286,29 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+
+.join-hero-btn
+{
+  align-self: center;
+  font-family: 'Seravek';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+
+/* or 143% */
+
+text-align: center;
+
+color: #0000FF;
+
+
+
+width: 209px;
+height: 46px;
+left: 115px;
+top: 653px;
+
+background: #FFFFFF;
+border-radius: 30px;}
