@@ -182,3 +182,21 @@ ol.drop-list {
 
     color: #FFFFFF;
 }
+
+.drop-b {
+    margin-bottom: 20px;
+    max-width: 263px;
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.drop-b a {
+    color: #FFFFFF;
+    text-underline-offset: 5px;
+
+}

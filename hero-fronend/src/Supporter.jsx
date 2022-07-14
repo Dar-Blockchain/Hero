@@ -52,7 +52,7 @@ const Supporter = () => {
                 </ol>           
               <p className='drop-p'>These first mobilizers can then onboard other fellow mobilizers working on the same causes and campaigns to the platform, which are then verified by HERO, with the above criteria.</p>
                 
-              <p className='drop-p'>Find more information on our verification process on the HERO FAQ.</p>
+              <b className='drop-b'>Find more information on our verification process on the <Link to="/" >HERO FAQ</Link>.</b>
               
             </div>
           </div>
