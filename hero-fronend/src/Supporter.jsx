@@ -28,31 +28,31 @@ const Supporter = () => {
       {Dropdown === "on" && 
           <div className='Supporter d-flex flex-column align-items-center'>
 
-            <div className='hero-dropdown container-fluid d-flex flex-column align-items-center'>
-              <button onClick={closeDropdown} className="closebtn align-self-end" >
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                </svg>
-              </button>
-            <div className='row flex-column'>
+            <div className='hero-dropdown container d-flex flex-column align-items-center justify-content-center'>
+            <button onClick={closeDropdown} className="closebtn align-self-end" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+            </button>
+
+            <div className='align-self-center'>
             <img  src={mobilizersLogowhite} srcSet={mobilizersLogowhite} className="mobilizersLogowhite" />
             </div>
-            <div className='descc d-flex flex-column justify-content-center align-items-center'>
+
+            <div className='d-flex flex-column justify-content-center mt-5'>
               
-             <b>How we verify HERO Mobilizers :</b>  
-             <h6 className=" pb-3" style={{ fontWeight: "900" }}>
-                  How we Verify HERO Mobilizers :
-                </h6>
-              <p>HERO identifies publicly recognised climate movement leaders and campaigners.</p>
+             <b className="drop-title">How we verify HERO Mobilizers :</b>  
+
+              <p className="drop-p">HERO identifies publicly recognised climate movement leaders and campaigners.</p>
                 
-              <p>We verify their track record in successfully leading climate action with a focus on policy:</p>
-                <ul>
-                <li>No violence.</li> 
-                <li>At least 1 victory in enacting change.</li> 
-                </ul>           
-              <p>These first mobilizers can then onboard other fellow mobilizers working on the same causes and campaigns to the platform, which are then verified by HERO, with the above criteria.</p>
+              <p className="drop-p">We verify their track record in successfully leading climate action with a focus on policy:</p>
+                <ol className="drop-list">
+                  <li className="drop-listitem">No violence.</li> 
+                  <li className="drop-listitem">At least 1 victory in enacting change.</li> 
+                </ol>           
+              <p className='drop-p'>These first mobilizers can then onboard other fellow mobilizers working on the same causes and campaigns to the platform, which are then verified by HERO, with the above criteria.</p>
                 
-              <b>Find more information on our verification process on the HERO FAQ.</b>
+              <p className='drop-p'>Find more information on our verification process on the HERO FAQ.</p>
               
             </div>
           </div>
