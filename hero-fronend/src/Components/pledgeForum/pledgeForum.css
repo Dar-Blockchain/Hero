@@ -123,8 +123,8 @@ margin-top: 13px;
 .wtc {
     font-style: italic;
 font-weight: 500;
-font-size: 18px;
-line-height: 20px;
+font-size: 22px;
+line-height: 26px;
 
 /* or 111% */
 align-items: center;
@@ -137,4 +137,12 @@ color: #FFFFFF;
     background: white;
     color: blue;
     font-weight: 900;
+}
+
+.center-position{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
 }
