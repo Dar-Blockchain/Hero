@@ -72,6 +72,16 @@ small.s-t {
   line-height: 20px;  
   color: #FFFFFF;
   text-align: center;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+
+/* or 133% */
+
+text-align: center;
+
+color: #FFFFFF;
 }
 
 .hero-headline {

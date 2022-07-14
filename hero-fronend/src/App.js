@@ -51,7 +51,7 @@ function App() {
           <p className="hero-headline">Do you want to do more<br/> for the climate but just don’t know how?</p>
           <button name="second" onClick={nextPage} className="btn-hero">Click here to test the HERO app</button>
           <p className="hero-f-p">
-            Stanford Social Innovation Review estimates that funding climate mobilizers can be <b id='b'>100x</b> more efficient on reducing carbon emissions than buying carbon credits.
+            Stanford Social Innovation Review estimates that funding climate mobilizers can be <b style={{fontWeight: "900!important"}}>100x</b> more efficient on reducing carbon emissions than buying carbon credits.
           </p>
         </div>
       }
@@ -106,7 +106,7 @@ function App() {
                       <p className='hero-headline-last'>
                       The first crowdfunding platform<br/> providing a Basic Income for<br/> climate mobilizers with the most<br /> impact on policy today.
                       </p>
-                      <Link to="/supporter"><button className="btn-hero">Click here if you want do more</button></Link>
+                      <Link to="/supporter"><button className="btn-hero">Click here to test the HERO app</button></Link>
                   </div>
       }
     </div>

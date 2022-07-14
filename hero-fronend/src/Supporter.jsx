@@ -25,9 +25,10 @@ const Supporter = () => {
     <div className="container-fluid">
 
    
-    <div className='Supporter my-auto d-flex flex-column align-items-center pt-5'>
       {Dropdown === "on" && 
-            <div className='hero-dropdown container-fluid d-flex flex-column justify-content-center align-items-center'>
+          <div className='Supporter d-flex flex-column align-items-center'>
+
+            <div className='hero-dropdown container-fluid d-flex flex-column align-items-center'>
               <button onClick={closeDropdown} className="closebtn align-self-end" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
                   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
@@ -39,7 +40,9 @@ const Supporter = () => {
             <div className='descc d-flex flex-column justify-content-center align-items-center'>
               
              <b>How we verify HERO Mobilizers :</b>  
-    
+             <h6 className=" pb-3" style={{ fontWeight: "900" }}>
+                  How we Verify HERO Mobilizers :
+                </h6>
               <p>HERO identifies publicly recognised climate movement leaders and campaigners.</p>
                 
               <p>We verify their track record in successfully leading climate action with a focus on policy:</p>
@@ -53,17 +56,20 @@ const Supporter = () => {
               
             </div>
           </div>
+          </div>
       }
 
       {Dropdown === "off" && 
+                <div className='Supporter d-flex flex-column align-items-center pt-5'>
+
             <div className="heroo container-fluid d-flex flex-column justify-content-center align-items-center">
             <Link to="/"><img src={logo} alt="Hero Logo Blue" srcSet={logo} className='blueLogo' /></Link>
             <div className='Card d-flex justify-content-center align-items-center browse-p'><p>Click on the first HERO Mobilizers to see their profiles and work.</p></div>
             <button className='ds-h' onClick={handleDropdown}>Discover how HERO Mobilizers are verified</button>
             <ProfilesList/>
             </div>
+            </div>
       }
-    </div>
     </div>
   )
 }

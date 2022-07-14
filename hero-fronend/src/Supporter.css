@@ -1,6 +1,6 @@
 .Supporter {
     background: #F5F5F5;
-    height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -90,6 +90,7 @@ height: 10.33px;
     -moz-transition: all 0.5s 0s ease;
     -o-transition: all 0.5s 0s ease;
     transition: all 0.5s 0s ease; */
+    min-height: 100vh;
 }
 
 .close {
