@@ -27,7 +27,7 @@ export const MobilizerData = [
             campaing: "Fridays for Future UK",
             status: "In progress",
         },
-        { title: "Official ambassador UN Together Band Official",
+        { title: "Official ambassador UN Together Band",
             campaign: "Goals 13 and 14 on Climate Action and Life Below Water",
             desc: "UN Together Band Official is a global movement aiming to\
             build a worldwide community of 1 billion citizens to achieve the 17 UN Sustainable Development Goals.",
