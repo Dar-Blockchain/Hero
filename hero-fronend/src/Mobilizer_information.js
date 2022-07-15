@@ -11,6 +11,7 @@ export const MobilizerData = [
         phone: "57 (300) 7189525",
         sm: "IG: @elijahmckenziejackson",
         mainMovements: "Fridays for Future UK",
+        video: "elijahVideo.mp4",
         TopCampaigns:
         [
             {title: "No more fast fashion",
@@ -99,6 +100,7 @@ export const MobilizerData = [
         phone: "",
         sm: "IG: @jessicakleczka",
         mainMovements: "Indepedent mobiliser",
+        video: "jessicaVideo.mp4",
         Victories: [
         {
             title: "TEDx talk ",
