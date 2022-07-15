@@ -188,7 +188,7 @@ export const MobilizerData = [
                 desc: "Co-Director at Pacto X El Clima Colombia: Pacto's mission is to transform Latin American society with youth to build a more prosperous, equitable and peaceful world in harmony with the ecological environment through communication, education, art, research, and actions."
             }, 
             {
-                title: "Fridays",
+                title: "Fridays For Future Bogotá",
                 campaign: "Future Bogotá",
                 status: "In progress",
                 desc: "FFF is a youth-led and organised international climate strike movement of students walking out of school on Fridays, started by Greta Thunberg."

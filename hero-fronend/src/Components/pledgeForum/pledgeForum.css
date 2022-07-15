@@ -37,43 +37,54 @@
 }
 
 .p-headline {
+    font-family: 'Seravek';
     font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 22px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 292px;
+    color: #FFFFFF;
+    height: 61px;
 }
 
 .p-end {
-font-weight: 100;
-font-size: 16px;
-line-height: 22px;
-display: flex;
-align-items: center;
+font-family: 'Seravek';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+width: 204px;
+/* or 133% */
+
 text-align: center;
 
 color: #FFFFFF;
 
+}
 
+
+#hola {
+    background-color: white;
+    color: #8585FF;
 }
 
 .btn-c-m {
+
+    font-family: 'Seravek';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 31px;
+    text-align: center;
+    background-color: transparent!important;
+    color: #FFFFFF;
+    width: 185px;
+    height: 52px;    
     border: 2px solid #FFFFFF;
     border-radius: 30px;
-    width: 295px;
-    height: 52px;
-    background-color: transparent;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    align-items: center;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.96);
 }
 
 .btn-c-m.l {
