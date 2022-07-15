@@ -109,7 +109,7 @@ const PledgeForum = () => {
 
   return (
     <div className='pledgeForum container d-flex flex-column px-4 py-5 justify-content-center'>
-      <button onClick={handleClose} className="closebtn align-self-end" >
+      <button onClick={handleClose} className="closebtn align-self-end mb-2" style={{marginBottom: 0}}>
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
           <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
         </svg>
@@ -155,7 +155,7 @@ const PledgeForum = () => {
       */}
 
     {forum === 1 && !error && 
-      <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
+      <div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
         <p className="p-headline">
         What excites you more about HERO?</p>
@@ -174,25 +174,35 @@ const PledgeForum = () => {
 {/* Contact */}
 
         {forum === 2 && !error && 
-      <div className="d-flex flex-column justify-content-center align-items-center my-5 "> 
+      <div className="d-flex flex-column justify-content-center align-items-center my-auto "> 
         <img id='logo' src={logo} srcSet={logo} alt="logo" />
+        <p className="p-headline">
+        Action is your power!
+        </p>
+        <p className="p-end">Please leave us your details so that we<br/> can send you a link for our launch!*</p>
         <form className="d-flex flex-column align-self-center align-items-center justify-content-center">        
         <label>
-          <h6>Your Name</h6>
-          <input type="text" name='Full_Name' onChange={handleChange} placeholder="Full Name" />
+          <h6 className='justify-content-center'>Your Name</h6>
+          <input type="text" name='Full_Name' onChange={handleChange} placeholder="John Doe" />
         </label>
         <label>
-        <h6>Email</h6>
-          <input type="text" name='Email' onChange={handleChange} placeholder="Your email adresss" />
+        <h6 className='justify-content-center'>Email</h6>
+          <input type="text" name='Email' onChange={handleChange} placeholder=" john@doe.com" />
         </label>
         <label>
-        <h6>Birth Date</h6>
-          <input type="text" name='Birth_date' onChange={handleChange} placeholder="Your Birth Date" />
+        <h6 className='justify-content-center'>Birth Date</h6>
+          <input type="text" name='Birth_date' onChange={handleChange} placeholder="24/10/2022" />
         </label>
         <label>
-        <h6>City</h6>
-          <input type="text" name='City' onChange={handleChange} placeholder="Your City" />
+        <h6 className='justify-content-center'>City</h6>
+          <input type="text" name='City' onChange={handleChange} placeholder="Amsterdam" />
         </label>
+        <div className="form-check mt-4">
+  <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1"/>
+  <label className="form-check-label" for="flexRadioDefault1">
+  I accept to receive emails from HERO.
+  </label>
+</div>
       </form>
       <button onClick={(e) => validateAction(e, 3)}  className="btn-c-m w my-4">Become a HERO Supporter</button>
 

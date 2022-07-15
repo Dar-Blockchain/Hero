@@ -6,8 +6,9 @@
 }
 .pledgeForum ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
+    color: rgba(255, 255, 255, 0.61);
     font-size:18px;
+    text-align: center;
   }
 
 .inputcash {
@@ -101,7 +102,8 @@ form input {
     border: none; /* Removes the default border */
     border-bottom: 1px solid white;
     background-color: transparent;
-    color: rgba(255, 255, 255, 0.41);
+    color: white;
+    width: 250px;
 }
 
 
@@ -173,4 +175,8 @@ color: #FFFFFF;
     border-bottom: 1px solid white;
     outline: 0;
     box-shadow: 0 0 0 .25remrgba(13,110,253,.25);
+}
+
+.form-check-label{
+    color: white;
 }
