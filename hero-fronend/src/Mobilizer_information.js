@@ -57,6 +57,7 @@ export const MobilizerData = [
         phone: "",
         sm: "linktr.ee/julietamartinez",
         mainMovements: "",
+        video: "julietaVideo.mp4",
         Victories: [
             {
                 title:"Chilean Women Creating Future ", 
