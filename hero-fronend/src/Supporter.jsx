@@ -52,7 +52,7 @@ const Supporter = () => {
                 </ol>           
               <p className='drop-p'>These first mobilizers can then onboard other fellow mobilizers working on the same causes and campaigns to the platform, which are then verified by HERO, with the above criteria.</p>
                 
-              <b className='drop-b'>Find more information on our verification process on the <Link to="/" >HERO FAQ</Link>.</b>
+              <b className='drop-b'>Find more information on our verification process on the <a href="https://herolabsco.notion.site/Discover-how-HERO-Mobilizers-are-verified-a3b9028ab257499fafa9d724c2ecb11b" target="_blank">HERO FAQ</a>.</b>
               
             </div>
           </div>

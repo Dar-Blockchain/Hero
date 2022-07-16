@@ -94,11 +94,6 @@ const Profile = () => {
                   <p className="smedia">{profile.sm}</p>
                 </div>
               </div>
-              {profile.id === "Julieta" ? (
-                <div className="d-flex align-items-center justify-content-center w-100" id={"Play" + profile.id}>
-                  <img className="align-self-center" src={play} />
-                </div>
-              ) : ("")}
               {profile.video && (
                 <div className="d-flex align-items-center justify-content-center w-100 mt-4" id={"Play" + profile.id}>
                   <video id="background-video" controls={true} playsInline>
